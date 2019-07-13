@@ -42,7 +42,7 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 # Disqus comments
-disqus_shortname: https://devhyunseok.github.io/
+disqus_shortname: devhyunseok
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
