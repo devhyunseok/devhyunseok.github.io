@@ -1,7 +1,7 @@
 # External gems
 # See http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html for making `jekyll archives` work.
 # https://github.com/bencentra/centrarium 테마 사용.
-gems:
+plugins:
   - jekyll-archives # Sorry, not GitHub pages friendly!
   - jekyll-sitemap
   - jekyll-paginate
@@ -34,11 +34,11 @@ highlightjs_theme: "monokai-sublime"
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
   enabled:
-    - categories
+    - posts
     - tags
   layout: 'archive'
   permalinks:
-    category: '/category/:name/'
+    category: '/posts/:name/'
     tag: '/tag/:name/'
 
 # Disqus comments
