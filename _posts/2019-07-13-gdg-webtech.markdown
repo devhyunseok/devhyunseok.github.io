@@ -147,7 +147,7 @@ Puppeteer, PWA는 최근에 개인적으로 공부를 진행했었는데,
 
 <h1 style="margin: 0px">Deep in Lighthouse Audits</h1>
 <hr style="margin: 0px"/>
-- <a href="https://archive.org/">archive.org</a>
+### Lighthouse 란?
 - Google Chrome팀에서 만든 데브 툴.
 - Google Chrome에서 Audits 탭에서 사용 가능.
 - 분석 도구
