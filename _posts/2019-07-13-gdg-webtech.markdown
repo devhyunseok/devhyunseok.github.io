@@ -3,6 +3,7 @@ layout: post
 title:  "I/O Extended 2019 WebTech 후기"
 author: Hyunseok
 categories: seminar
+comments: true
 ---
 
 <a href="https://festa.io/events/339"><img src="/assets/tech_seminar/gdg_webtech/gdg_io_2019_webtech.jpg" title="gdg io 2019 webtech"></a>
