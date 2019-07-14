@@ -15,7 +15,7 @@ subtitle: "개발하면서 알게된 내용을 공유하기 위한 블로그입�
 email: devhyunseok@gmail.com
 name: Hyunseok Kim
 description: >
-  A simple yet classy theme for your Jekyll website or blog.
+  개발하면서 알게된 내용을 공유하기 위한 블로그입니다.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -26,9 +26,9 @@ logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
-paginate: 5
+paginate: 10
 paginate_path: "/page:num/"
-inter_post_navigation: false
+inter_post_navigation: true
 highlightjs_theme: "monokai-sublime"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
@@ -49,11 +49,8 @@ disqus_shortname: devhyunseok
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
-
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+  - cat: Posts
+    desc: "개발과 관련된 내용을 정리한 포스팅입니다."
 
 # Social icons and sharing options
 #
@@ -104,7 +101,7 @@ social:
     username:
     url:
     desc: Add me to your Circles
-    share: false
+    share: true
 
   - name: YouTube
     icon: youtube
