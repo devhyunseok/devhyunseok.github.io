@@ -6,6 +6,10 @@ categories: Frontend
 comments: true
 ---
 
+원본: https://medium.com/front-end-weekly/imperative-versus-declarative-code-whats-the-difference-adc7dd6c8380
+
+위 포스팅을 읽고 요점을 정리한 내용입니다.
+
 ### 명령적 패러다임
 - 절차적, 객체지향 프로그래밍은 명령적 패러다임
 - C, C++, C#, PHP, Java 같은.
@@ -47,9 +51,3 @@ const sum = a => b => a + b;
 console.log (sum (5) (3)); // 8
 </code>
 </pre>
-
-
-원본: https://medium.com/front-end-weekly/imperative-versus-declarative-code-whats-the-difference-adc7dd6c8380
-
-위 내용을 읽고 요점을 정리한 내용입니다.
-오역 및 잘못된 점이 있다면 수정 반영하겠습니다.
