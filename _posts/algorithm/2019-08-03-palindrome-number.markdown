@@ -59,3 +59,6 @@ const isPalindrome = function(x) {
 };
 </code>
 </pre>
+
+---
+<h4><a href="https://leetcode.com/problems/palindrome-number/">출처 : Leetcode</a></h4>
