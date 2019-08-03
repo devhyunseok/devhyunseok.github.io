@@ -10,7 +10,7 @@ comments: false
 <pre>
 <b>난이도 : Easy</b>
 <b>언어: Javascript</b>
-<h4>출처 : <a href="https://leetcode.com/problems/palindrome-number/">Leetcode</a></h4>
+<b>출처 : </b><a href="https://leetcode.com/problems/palindrome-number/"><b>Leetcode</b></a>
 </pre>
 ---
 <p>
