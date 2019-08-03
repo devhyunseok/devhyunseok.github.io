@@ -7,7 +7,9 @@ comments: false
 ---
 
 <h1>Palindrome Number</h1>
-<h4>난이도 : Easy</h4>
+<h3>난이도 : Easy</h3>
+<h3>언어: Javascript</h3>
+<h3>출처 : <a href="https://leetcode.com/problems/palindrome-number/">Leetcode</a></h3>
 ---
 <p>
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.</p>
@@ -42,8 +44,6 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 ---
 
 <h2>Solution</h2>
-<h4>언어: Javascript</h4>
-<h4>출처 : <a href="https://leetcode.com/problems/palindrome-number/">Leetcode</a></h4>
 <pre>
 <code>/**
  * @param {number} x
