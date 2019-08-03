@@ -7,9 +7,9 @@ comments: false
 ---
 
 <h1>Palindrome Number</h1>
-<h5>난이도 : Easy</h5>
-<h5>언어: Javascript</h5>
-<h5>출처 : <a href="https://leetcode.com/problems/palindrome-number/">Leetcode</a></h5>
+<b>난이도 : Easy</b>
+<b>언어: Javascript</b>
+<b>출처 : <a href="https://leetcode.com/problems/palindrome-number/">Leetcode</a></b>
 ---
 <p>
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.</p>
