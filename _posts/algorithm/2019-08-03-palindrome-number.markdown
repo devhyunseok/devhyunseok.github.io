@@ -43,6 +43,7 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 <h2>Solution</h2>
 <h4>언어: Javascript</h4>
+<h4>출처 : <a href="https://leetcode.com/problems/palindrome-number/">Leetcode</a></h4>
 <pre>
 <code>/**
  * @param {number} x
@@ -59,6 +60,3 @@ const isPalindrome = function(x) {
 };
 </code>
 </pre>
-
----
-<h4><a href="https://leetcode.com/problems/palindrome-number/">출처 : Leetcode</a></h4>
