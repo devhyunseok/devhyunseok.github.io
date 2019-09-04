@@ -2,7 +2,7 @@
 layout: post
 title: "명령형 패러다임 vs 선언적 패러다임"
 author: Hyunseok
-categories: Frontend
+categories: frontend
 comments: true
 ---
 

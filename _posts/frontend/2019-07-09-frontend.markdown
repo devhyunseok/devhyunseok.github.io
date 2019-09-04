@@ -2,7 +2,7 @@
 layout: post
 title:  "FE 개발자가 알아야하는 내용"
 author: Hyunseok
-categories: Frontend
+categories: frontend
 comments: false
 ---
 
