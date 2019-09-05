@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Typescript 자주 쓰는 tsconfig 설정 메모"
+title:  "[Typescript] 자주 쓰는 tsconfig 설정 메모"
 author: Hyunseok
 categories: frontend
 comments: true
 ---
 
-#### Typescript 사용 시 자주 쓰는 tsconfig 옵션 메모 
+#### React에서 Typescript 사용 시 자주 쓰는 tsconfig 옵션 메모 
 
 ```
 {
