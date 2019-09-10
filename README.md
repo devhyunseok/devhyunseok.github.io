@@ -1,4 +1,5 @@
 # Hyunseok's Devlog
+- https://devhyunseok.github.io/
 
 ## Using Library
 - [Jekyll](https://jekyllrb.com/) 
