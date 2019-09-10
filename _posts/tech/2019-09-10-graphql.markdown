@@ -33,8 +33,9 @@ comments: true
 - 서버에서 오는 Response 양은 감소하지만 쿼리를 보내는 Client의 Request양은 증가.
 
 ## 구현
-### Schema (Server)
+#### Schema (Server)
 - 클라이언트에게 보내거나 받을 Data의 설명
+
 ```
 type Photo {
     id: Int! // !는 사용의 강제성을 부여.
@@ -56,8 +57,9 @@ type Query{
 }
 ```
 
-### Resolver (Server)
+#### Resolver (Server)
 - 쿼리 요청의 해결(resolve), 응답해주는 중간 역할
+
 ```
 const resolvers = {
   Query: {
@@ -68,8 +70,9 @@ const resolvers = {
 export default resolvers;
 ```
 
-### Queries (Client)
+#### Queries (Client)
 - 발송할 쿼리 내용
+
 ```
 export const ALBUM_LIST = gql`
     {
@@ -93,7 +96,8 @@ export const PHOTO_LIST = gql`
 `;
 ```
 
-### Request Query with React-Hooks (Client)
+#### Request Query with React-Hooks (Client)
+
 ```
 import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
@@ -125,7 +129,7 @@ export default Home;
 ```
 
 ### 소스 원본
-- [Github](https://github.com/devhyunseok/album-react-graphql)
+- [album-react-graphql](https://github.com/devhyunseok/album-react-graphql)
 
 ### [Graphql-yoga](https://github.com/prisma/graphql-yoga)
 - GraphQL을 빠르게 시작할수 있는 GraphQL 서버 템플릿.
