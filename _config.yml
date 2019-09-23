@@ -15,13 +15,13 @@ subtitle: "개발하면서 알게된 내용을 공유하기 위한 블로그입�
 email: devhyunseok@gmail.com
 name: Hyunseok Kim
 description: >
-  개발하면서 알게된 내용을 공유하기 위한 블로그입니다.
+개발하면서 알게된 내용을 공유하기 위한 블로그입니다.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://devhyunseok.github.io" # the base hostname & protocol for your site
-#cover: "/assets/header_image.jpg"
+cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
 # Build settings
