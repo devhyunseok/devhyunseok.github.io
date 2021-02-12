@@ -1,9 +1,12 @@
 ---
-layout: post
+date: "2019-09-05T13:00:00.121Z"
 title:  "[Typescript] 자주 쓰는 tsconfig 설정 메모"
 author: Hyunseok
-categories: frontend
-comments: true
+template: "post"
+category: "Frontend"
+description: ""
+tags:
+- "Frontend"
 ---
 
 ### React에서 Typescript 사용 시 자주 쓰는 tsconfig 옵션 메모 

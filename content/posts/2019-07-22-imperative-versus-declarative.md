@@ -1,9 +1,12 @@
 ---
-layout: post
+date: "2019-07-22T13:00:00.121Z"
 title: "명령형 패러다임 vs 선언적 패러다임"
 author: Hyunseok
-categories: frontend
-comments: true
+template: "post"
+category: "Frontend"
+description: ""
+tags:
+- "Frontend"
 ---
 
 원본: <a href="https://medium.com/front-end-weekly/imperative-versus-declarative-code-whats-the-difference-adc7dd6c8380">imperative-versus-declarative-code-whats-the-difference</a>

@@ -1,9 +1,12 @@
 ---
-layout: post
+date: "2019-07-13T13:00:00.121Z"
 title:  "GDG I/O Extended 2019 WebTech 후기"
 author: Hyunseok
-categories: seminar
-comments: true
+template: "post"
+category: "Seminar"
+description: ""
+tags:
+- "Frontend"
 ---
 
 <a href="https://festa.io/events/339"><img src="/assets/tech_seminar/gdg_webtech/gdg_io_2019_webtech.jpg" title="gdg io 2019 webtech"></a>

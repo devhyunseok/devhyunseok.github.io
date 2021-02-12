@@ -1,9 +1,14 @@
 ---
-layout: post
+date: "2019-10-08T13:00:00.121Z"
 title:  "[React] Redux, React-Redux"
+slug: "[React] Redux, React-Redux"
 author: Hyunseok
-categories: frontend
-comments: true
+template: "post"
+category: "Frontend"
+description: ""
+tags:
+- "Frontend"
+
 ---
 
 ## Redux, React-Redux

@@ -1,9 +1,12 @@
 ---
-layout: post
+date: "2019-08-03T13:00:00.121Z"
 title:  "Palindrome Number"
 author: Hyunseok
-categories: algorithm
-comments: false
+template: "post"
+category: "Algorithm"
+description: ""
+tags:
+- "Algorithm"
 ---
 
 <h1>Palindrome Number</h1>
