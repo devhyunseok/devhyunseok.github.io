@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Hyunseok]]></title><description><![CDATA[Blog by Hyunseok]]></description><link>https://devhyunseok.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 14 Feb 2021 07:36:18 GMT</lastBuildDate><item><title><![CDATA[[React] React?]]></title><link>https://devhyunseok.github.io/posts/2019-10-08-react/</link><guid isPermaLink="false">https://devhyunseok.github.io/posts/2019-10-08-react/</guid><pubDate>Tue, 08 Oct 2019 13:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;react-란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#react-%EB%9E%80&quot; aria-label=&quot;react 란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href=&quot;https://ko.reactjs.org/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;React 란?&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;페이스북과 인스타그램으로 유명한 페이스북에서 만든 &lt;strong&gt;UI 라이브러리&lt;/strong&gt;입니다.
+리액트는 다른 모던 웹 기술과는 다르게 프레임워크라고는 하지 않고 &lt;strong&gt;라이브러리&lt;/strong&gt;라고 하는데요.
+이는 리액트는 &lt;strong&gt;기본적으로 컴포넌트를 통한 화면 표현만을 담당&lt;/strong&gt;하기 때문입니다. 리액트에는 웹을 개발하는데 꼭 필요한 기본적인 구성요소들이 포함되어 있지 않습니다.&lt;/p&gt;
+&lt;h3 id=&quot;웹-개발-시-필요한-추가-라이브러리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%EC%8B%9C-%ED%95%84%EC%9A%94%ED%95%9C-%EC%B6%94%EA%B0%80-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC&quot; aria-label=&quot;웹 개발 시 필요한 추가 라이브러리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;웹 개발 시, 필요한 추가 라이브러리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;React-Router … (페이지 라우팅)&lt;/li&gt;
+&lt;li&gt;Redux, MobX … (데이터 상태 관리)&lt;/li&gt;
+&lt;li&gt;Redux-Saga, Redux-Thunk … (네트워크 및 비동기 데이터 처리)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;그외&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B7%B8%EC%99%B8&quot; aria-label=&quot;그외 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;그외&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ECMAScript 6+ 문법&lt;/li&gt;
+&lt;li&gt;Component Base Development (CBD) 개발 방법론&lt;/li&gt;
+&lt;li&gt;Webpack&lt;/li&gt;
+&lt;li&gt;Babel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;create-react-app&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#create-react-app&quot; aria-label=&quot;create react app permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href=&quot;https://create-react-app.dev/docs/getting-started&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Create-React-App&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ff0d9178b53bc90d672f94cade59851f/d76ab/react-create-react-app.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 38.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABcSAAAXEgFnn9JSAAABYklEQVQoz5WQS0sCURTH52u0MKiFpL1AipAIghYtK+1hmbVzF7Tp+/nKaiOtWpQzzozjvB+6mEFE/XfPmKMJLbrw49zzuP9zzuU8zwPfbKLVEiDLMprs/p8zHo9/+ZzT7eLji8enKIEXRQiCAKWjQtd1aJoG0zShqmrYzDAMdFk9DUH4vh+JToU5PwhgOy5M24ZhWpCYGC+1IUoSJAYJ0uN+v4/BYIDRaBQxFZmfkgv8AK7rhp1tJurYDjzmk0iv14tyZC3LiqANyA6HwxmsCRewCdttOZxEURS2XgcGK6b1NE0N16Uc3XX2BRQPAh/0jlg83HP9FaVyFWTnoVi5UosolWs/secwX395C6nU6qgyqKbReAeX2E5jb/8IW6k01jZ2kNzcRTyZQmwlgeXVdUZyjolPuRmT+FIsjoPDY3C5QhH5+yIucnc4zd7g7Dwfkr28ReYPsotcFXCSucbD4xO+AfOxBoHrydk+AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/ff0d9178b53bc90d672f94cade59851f/8ac56/react-create-react-app.webp 240w,
+/static/ff0d9178b53bc90d672f94cade59851f/d3be9/react-create-react-app.webp 480w,
+/static/ff0d9178b53bc90d672f94cade59851f/e46b2/react-create-react-app.webp 960w,
+/static/ff0d9178b53bc90d672f94cade59851f/f992d/react-create-react-app.webp 1440w,
+/static/ff0d9178b53bc90d672f94cade59851f/b8c25/react-create-react-app.webp 1731w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/ff0d9178b53bc90d672f94cade59851f/8ff5a/react-create-react-app.png 240w,
+/static/ff0d9178b53bc90d672f94cade59851f/e85cb/react-create-react-app.png 480w,
+/static/ff0d9178b53bc90d672f94cade59851f/d9199/react-create-react-app.png 960w,
+/static/ff0d9178b53bc90d672f94cade59851f/07a9c/react-create-react-app.png 1440w,
+/static/ff0d9178b53bc90d672f94cade59851f/d76ab/react-create-react-app.png 1731w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/ff0d9178b53bc90d672f94cade59851f/d9199/react-create-react-app.png&quot;
+            alt=&quot;image.png&quot;
+            title=&quot;image.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;처음 리액트를 시작할 때, 유용한 Create React App 패키지입니다.&lt;/strong&gt;
+Facebook에서 제공하는 패키지로 개발용 Node 서버 및 Webpack, Babel 설정 등 리액트를 개발하는데 있어 필요한 기본 설정이 포함되어 있습니다.&lt;/p&gt;
+&lt;p&gt;Create-React-App으로 개발 시 &lt;strong&gt;SPA(Single-Page-Application)&lt;/strong&gt; 구조를 갖습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;jsx-문법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jsx-%EB%AC%B8%EB%B2%95&quot; aria-label=&quot;jsx 문법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JSX 문법&lt;/h2&gt;
+&lt;p&gt;리액트에서 화면을 구성하는 문법중 하나인 자바스크립트 xml입니다.&lt;/p&gt;
+&lt;p&gt;Facebook에서 만들었고 XHP라는 언어가 기반이 되었다고 합니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 570px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/05d660bd5a23e0cdcdbcb188e40dad7f/432e7/react-jsx-01.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3klEQVQoz52Q4XKDIBCEeZfGGAiiBkGwiCaxP9pO3/9xtocZ24wT25n8WG4H5va+g/GjxrGooUoNqciTuGwgCkve3O6K3zdBPpcae3F6KNYNXwjjBcMYMPQdxt7DmB7eT7C2RwwtTOswRo8zqbEOXFnkBHKgwWux0pzhwwfKJmInNF7yGtndxIwnGj3XxS9hqa7F0tG5EeH1Clk7VLqDrNpNgkWbhBmvoW3E2/QJFybEyztOtGqi+ytwS0wQjSIqRf+SQnaH6ifsP8rHgeVtvf2q+ZmwOXBuvGt+NmjRN3Nw+BxpY4ylAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/05d660bd5a23e0cdcdbcb188e40dad7f/8ac56/react-jsx-01.webp 240w,
+/static/05d660bd5a23e0cdcdbcb188e40dad7f/d3be9/react-jsx-01.webp 480w,
+/static/05d660bd5a23e0cdcdbcb188e40dad7f/048c8/react-jsx-01.webp 570w&quot;
+              sizes=&quot;(max-width: 570px) 100vw, 570px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/05d660bd5a23e0cdcdbcb188e40dad7f/8ff5a/react-jsx-01.png 240w,
+/static/05d660bd5a23e0cdcdbcb188e40dad7f/e85cb/react-jsx-01.png 480w,
+/static/05d660bd5a23e0cdcdbcb188e40dad7f/432e7/react-jsx-01.png 570w&quot;
+            sizes=&quot;(max-width: 570px) 100vw, 570px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/05d660bd5a23e0cdcdbcb188e40dad7f/432e7/react-jsx-01.png&quot;
+            alt=&quot;image.png&quot;
+            title=&quot;image.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;위의 이미지가 JSX 문법으로 된 화면입니다. &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 570px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/121716a5350f47314a53fca58ab14c70/432e7/react-jsx-02.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 36.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVQoz42P0Q6DIAxF/Ro3UUHAFkHn1D0u+//PuQOyhyVq4sNJSUpPbwvZeWg7oSdC8IzBERw7aDPC2jm+GUQMdg7TOOR3pRi32h5SiJbhnh+E5Q3/WOHHGYYCFC3oaIVxTyjrITXFxYxGEe4t5eF70+8oytpAyJggbKCw5lrrCU2UtZx4oYpXlMJELMpfkjR8mDA10ufhscH6GXmBSgkMbiKhD9OcJkyNKp4gOWR0mHK9KtgJk6zWw+EJ/6LLQtG504Grkn++bGfZ/1AzgYQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/121716a5350f47314a53fca58ab14c70/8ac56/react-jsx-02.webp 240w,
+/static/121716a5350f47314a53fca58ab14c70/d3be9/react-jsx-02.webp 480w,
+/static/121716a5350f47314a53fca58ab14c70/048c8/react-jsx-02.webp 570w&quot;
+              sizes=&quot;(max-width: 570px) 100vw, 570px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/121716a5350f47314a53fca58ab14c70/8ff5a/react-jsx-02.png 240w,
+/static/121716a5350f47314a53fca58ab14c70/e85cb/react-jsx-02.png 480w,
+/static/121716a5350f47314a53fca58ab14c70/432e7/react-jsx-02.png 570w&quot;
+            sizes=&quot;(max-width: 570px) 100vw, 570px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/121716a5350f47314a53fca58ab14c70/432e7/react-jsx-02.png&quot;
+            alt=&quot;image.png&quot;
+            title=&quot;image.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;다음은 자바스크립트로 구성한 화면입니다.&lt;/p&gt;
+&lt;p&gt;대체로 첫번째 이미지의 JSX 문법을 이용한 구성이 익숙해지면 가독성이 더 좋다고 생각합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;리액트에서 JSX 문법을 사용하려면 Babel을 이용한 트랜스파일링이 필요합니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;spa-single-page-application&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#spa-single-page-application&quot; aria-label=&quot;spa single page application permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SPA (Single Page Application)&lt;/h2&gt;
+&lt;p&gt;Create-React-App으로 프로젝트를 생성하면,
+SPA(Single Page Application)으로 생성되며 하나의 html 문서에 javascript 코드로 내부 가상 돔(Virtual DOM)을 조작하여 화면을 표시합니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 900px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/37ef91c262f327844f914b454364a173/1cfc2/react-spa-01.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 26.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABcSAAAXEgFnn9JSAAAA/0lEQVQY012Qu27DMAxF8zFBHpYl2ZZsSbHjKGmcR712Ljr3//dTpgWKpsMZLkFe8nLRtZ73vGLeKfJ0J59vzDlySQrfexqh6mpqb9GlQpUl5S+i1TML7xo+pyVvw5rYR05Tz3Do2MeCUG/QVhqtxtQaVRRstwXFX4pnFq13fOQlc1xzGy3XqDilhnYYGKcjrfcku8LpzbexFmPTGIwzlA+t/hk6GThHIxc5gm/oO8sYAvcUxDwwOs/QGpJErlxFjJYuVqRdRQhSsxJdlxhjfiI3viMMmbQ/klLiNFjmTvO602S35cUoQn8QMvvkueytUHF9MNY0vsbKMievM/LTLzjZoITfbIPPAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/37ef91c262f327844f914b454364a173/8ac56/react-spa-01.webp 240w,
+/static/37ef91c262f327844f914b454364a173/d3be9/react-spa-01.webp 480w,
+/static/37ef91c262f327844f914b454364a173/131f1/react-spa-01.webp 900w&quot;
+              sizes=&quot;(max-width: 900px) 100vw, 900px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/37ef91c262f327844f914b454364a173/8ff5a/react-spa-01.png 240w,
+/static/37ef91c262f327844f914b454364a173/e85cb/react-spa-01.png 480w,
+/static/37ef91c262f327844f914b454364a173/1cfc2/react-spa-01.png 900w&quot;
+            sizes=&quot;(max-width: 900px) 100vw, 900px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/37ef91c262f327844f914b454364a173/1cfc2/react-spa-01.png&quot;
+            alt=&quot;image.png&quot;
+            title=&quot;image.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;위의 이미지를 보시면 root라는 id를 가진 엘리먼트에 App이라는 컴포넌트를 렌더링하여 화면에 표시하도록 되어있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/657a474a55b5767c7970331690ee3729/8c557/react-spa-02.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 89.16666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAABcSAAAXEgFnn9JSAAACXElEQVQ4y5VU23LTMBDNx0Dim6y7JfnaOHGaQOgwQx94Yhj+/x8OK7kDDJS0fdixdi0dnd09q83SCvyYt7j0AueHRyyDw9dhB9cI+NnBtRoNrQWvUdcv22bvBb5N79CrHDp4uE6idRWkrFALMsnAyaqyQFG8bBunBTqZwfMcXhXETIJxuQLkTxY3lyXKV9jGKInHfovv+/c4DxJ9sMROEUAEydOmX8BP4DcBuVDp9mWSWPYO837E+f4ex2VGP7dwgRhT6oxKEFOvWfmUXvlXuqu/EVKmheQMjxeNT0eNbhhxPH/A/eWK0HvslwnL5YhmbKAcB9cErBg1q4HQ1AzyJS8gamIohExUM0pn6hTGoYNWAkMQcM7CNgE+dFTbBh2BBVfDegfrHBrnobROvvMejFW/AWPavZeYpg68rjB6YmAUTOPpcIDWEmPgaG0NYx3FHbRpIJVOfuNbVBUBxgasBa0wkxatqqGUIclQnMU4NYYVyPMc222OXUbrLENGFr8xvvq7tYacCzq0do6RMA+HI46nA8a5hyFNmlbB9gqcLopWUVq3u5wAV4dzjuv1I+4OI3QXJ8WS2GUqvDA8fcuqvCmdBBg3xPxjp4016aByIjGqBUtgnGKMavsKHYpfTeE0r03ooa3HcHcAp4bFGv1vzJ4FlEqln4Ju/3wy+HJx9BDQ7DKWWD938GbKUTYV1eU0KVz2Ct7QY0ACzf9gcYvRvwy1gZI8aS+Oz5ZkkeXrKL3E5llAawx4VYCRdARbjZP+GHs7WAJsTY2r32LSOR7CDie7w9Jz3IU6MX0r4E89YjCOpEbm8QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/657a474a55b5767c7970331690ee3729/8ac56/react-spa-02.webp 240w,
+/static/657a474a55b5767c7970331690ee3729/d3be9/react-spa-02.webp 480w,
+/static/657a474a55b5767c7970331690ee3729/426ac/react-spa-02.webp 700w&quot;
+              sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/657a474a55b5767c7970331690ee3729/8ff5a/react-spa-02.png 240w,
+/static/657a474a55b5767c7970331690ee3729/e85cb/react-spa-02.png 480w,
+/static/657a474a55b5767c7970331690ee3729/8c557/react-spa-02.png 700w&quot;
+            sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/657a474a55b5767c7970331690ee3729/8c557/react-spa-02.png&quot;
+            alt=&quot;image.png&quot;
+            title=&quot;image.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;App은 위의 이미지처럼 컴포넌트로 구성 되어있고 실행하면 다음과 같이 나타납니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/428f986f4bd9fa7fb346432e81d3dad7/8c557/react-spa-03.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 114.16666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAABcSAAAXEgFnn9JSAAACiElEQVQ4y61UW4vTUBDu31DYttukt/Q0adOkSZo0Sa9pa0VXfVDUFRfEFXRdWMHLg7gKVmTfRH1yEf/o55xTWtraK/jwMXMyc74zl8zEagUFhi1BYipMN4Drh9AqVTBNF9B0EwrTkNyXEU+kxjIp4WpCwh4hHt/HXjyJK1yn7zHHdmC5Fqqej/7wOoJWF7YXEgL67sNwPCFNkmrZgJxnqKplHFg2fILVGCKI7uB+UINRMRFjZQsFzUKxZFE0DhTVnEO+aEDRTDCy83OWVaCStOlemaCZAXS7ibrpQCWfWEapIJ2fQAc/LwO3j3UDaZISnWV+J1eGnCshldOFTyxbMLAbKmvtgpC/vMph1jbV1/ivJJykmmUm0llNgOubAlhKOHtOp1Uwt4ui14MsFZDJl9eSxlalleENIjCnA/vhCwGtfROK4SNDTVhFujxCIsrrHqr3nsE//YT2h+9ovf+G4OwzqnePUaz3xiXYPmUdOc2BfXgC/+VH9C7+oDv6hcabC7hPXiNXqolHt0+Zii/LTKQZfbkUZN3RJdrnP+GfnAv71jWcRkhR1I7O4B2/Q/T1N5H9QPhqBPvBc2itG9SsIvma6wnnIqWUiv4Axq3HcJ++hfPoVJSAd3vpv7lIODHw8ZuMoJxRkUpkRUTG7SNIKQUyRTY7iov3/4mQlWxaFjZyjC8EWhZcpxLkCVxXVIsWRlUsFC5XRsilTIPu1DtodoZCNtpDhM0+LDtEozVA2OgjaA5QD3uI+geokY+80O2lKXNiIbMlKGYI5kUouBEUqyk2zXjDjH02pjzXNUqT1TpQgwG08Br90NF0njc2Zd5hpuA8EopUgEZu5ePbrK9dv2+1D3fFfyf8C8F01znQdQiEAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/428f986f4bd9fa7fb346432e81d3dad7/8ac56/react-spa-03.webp 240w,
+/static/428f986f4bd9fa7fb346432e81d3dad7/d3be9/react-spa-03.webp 480w,
+/static/428f986f4bd9fa7fb346432e81d3dad7/426ac/react-spa-03.webp 700w&quot;
+              sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/428f986f4bd9fa7fb346432e81d3dad7/8ff5a/react-spa-03.png 240w,
+/static/428f986f4bd9fa7fb346432e81d3dad7/e85cb/react-spa-03.png 480w,
+/static/428f986f4bd9fa7fb346432e81d3dad7/8c557/react-spa-03.png 700w&quot;
+            sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/428f986f4bd9fa7fb346432e81d3dad7/8c557/react-spa-03.png&quot;
+            alt=&quot;image.png&quot;
+            title=&quot;image.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;state-props&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#state-props&quot; aria-label=&quot;state props permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;State, Props&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/23f9744d854cb93d0caee182fea73393/5a190/react-state-props.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 102.91666666666669%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAABcSAAAXEgFnn9JSAAAC0klEQVQ4y51U23LTMBTMv0Ac3+SLZPl+aZw0adMMGaZ8PE888MBkoBloy5Qn+7CSWxo6SVt42EhWrPXuniONgvzioyfba5FOr3hysvPkfOfHpzuetrson2kk5TCyZL5zxPQQrmzefHeT5eeRL5pvMl9QVs2BlvL6jBbLDaV5SVxEJKKI8lRilGT7MU1sThPnAOyALD+7G5l+vmVhQUV10RXtup+dbXqeNr3L854BJkt6w417w4n6iSN6040OoVOkVlDcjqyw2LIggYKqS4uWEsDyYj1W0yX5siaH52QxCSWCsPkQ+nvCnyMnLLcmCAx8xbBDemv62tZbM6A3gFobbA5kR0gfCfGz9eUJ8aztXFFCTUVOmFMQleQGKXJJyGTRPxAiQwuL9cl5N199oGy6pmaxofnZhhar91TPVuTygiZq42ss21BoI0NPlp2NnCxXkKWVRDo3hSMkz2QIEsPmyJDT2ArVXFtTo57fPz9i71n/98RykJ6SbN51sr6gfH6J+Zq8pCGGCttBNgA96CBPF7D8FM+p7gabl8hY7lmGQvVSKMpOJDUl+ZS4RHGCnLy4BekUaJBjRj6yxHvEolpDFY+lc/WxXin9QzioyDt0OpkeFIDMwpoqxNgKaIz2mdjHLIf7lm+1ZaVEzi470WyI12tln5JqRbKYocFnJGBf2XtFY19DYbE1GSrrpZ3ta6XIKiWGGLwwo1BW5IlC5fRKQrSNKypyowaWY1IVn+xVeXxf6YfNLzT2tbbMEHZRrzoe1ziCQzbGXts8tNP+aXlC/LdCA8HHsurq+lRbdHDkPFTQ58MR9GFZ5ajWX1SoCVEpPyq6WXtOMW4ZtTFAe/C4oig9oQhkqjgMrTPZs3/EMo4esnPDrLPxB+zpe89QwPwBsPzcfagJIe7HCAX5arGhEPqqcvjzsA/g8ca+GXn5+SdHNL/caHoD3Dr/hxtw3LF0+eU3jASPsR62m3oAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/23f9744d854cb93d0caee182fea73393/8ac56/react-state-props.webp 240w,
+/static/23f9744d854cb93d0caee182fea73393/d3be9/react-state-props.webp 480w,
+/static/23f9744d854cb93d0caee182fea73393/d00b9/react-state-props.webp 800w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/23f9744d854cb93d0caee182fea73393/8ff5a/react-state-props.png 240w,
+/static/23f9744d854cb93d0caee182fea73393/e85cb/react-state-props.png 480w,
+/static/23f9744d854cb93d0caee182fea73393/5a190/react-state-props.png 800w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/23f9744d854cb93d0caee182fea73393/5a190/react-state-props.png&quot;
+            alt=&quot;image.png&quot;
+            title=&quot;image.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;리액트 컴포넌트의 경우 컴포넌트 내부에 &lt;strong&gt;state&lt;/strong&gt;와 &lt;strong&gt;props&lt;/strong&gt;라는 상태값을 가질수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;다른 컴포넌트로부터 넘겨받는 상태값은 props로 들어오며,
+컴포넌트 내부의 상태값은 state로 구성할 수 있습니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;해당 컴포넌트 외부로 상태값을 넘기고 싶을때는 callback 함수를 만들어서 외부에서 호출해주는 방식으로 구현해야 합니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;class-component-lifecycle&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#class-component-lifecycle&quot; aria-label=&quot;class component lifecycle permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Class Component LifeCycle&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d02089f71e7f521781a455fb8c212634/896c7/react-life-cycle.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 46.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABcSAAAXEgFnn9JSAAABdElEQVQoz3WR61KDMBCFef838p8voOOMHamXYi2VAgmQQEoIITkuabHV0TAZsrdvzyYRaHWdgpAt7GQxuQlSSgxmgKcP3s8p8NMEIQRGa0+29yE+jiPatkXf98EfUQiyYahZDmsNzGDASg7VqlA0TA6czlIbcF5BU7FqGmpgA1AfNTir0Io29I68s9D5CvrzAZNRqLMWaVwg33CyR8Sdwc1e4Jb1AaqeHiHu7tGvnwOQpw3l58gThtHYWSHgCO2I7pxDqQ7Y8Dek4gPGGdj8ALVaYVivMdK1ZAnH/ilH9V4GoA+1LvznaaPlcAI7HKTCS1ZhyyQM3ZssKpQvn6gft9AELESBXblDpeqQ/3tF8+DeX4C1ssgqjVKQOrq/hh4iSXZIU1LaH7GtC8R5So0vQH9mzDtaHAtwUbv42bFCXCZImh26QWPPDN6yIyk1FL8ALwp/Ad13N4QCJi3itMMrQfR4PaL/ofBf4HXwZJ9Vn2PX+y/gFx2GuhTl92E6AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/d02089f71e7f521781a455fb8c212634/8ac56/react-life-cycle.webp 240w,
+/static/d02089f71e7f521781a455fb8c212634/d3be9/react-life-cycle.webp 480w,
+/static/d02089f71e7f521781a455fb8c212634/e46b2/react-life-cycle.webp 960w,
+/static/d02089f71e7f521781a455fb8c212634/f992d/react-life-cycle.webp 1440w,
+/static/d02089f71e7f521781a455fb8c212634/882b9/react-life-cycle.webp 1920w,
+/static/d02089f71e7f521781a455fb8c212634/b07fc/react-life-cycle.webp 1938w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/d02089f71e7f521781a455fb8c212634/8ff5a/react-life-cycle.png 240w,
+/static/d02089f71e7f521781a455fb8c212634/e85cb/react-life-cycle.png 480w,
+/static/d02089f71e7f521781a455fb8c212634/d9199/react-life-cycle.png 960w,
+/static/d02089f71e7f521781a455fb8c212634/07a9c/react-life-cycle.png 1440w,
+/static/d02089f71e7f521781a455fb8c212634/29114/react-life-cycle.png 1920w,
+/static/d02089f71e7f521781a455fb8c212634/896c7/react-life-cycle.png 1938w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/d02089f71e7f521781a455fb8c212634/d9199/react-life-cycle.png&quot;
+            alt=&quot;image.png&quot;
+            title=&quot;image.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;리액트 컴포넌트 생명 주기입니다.
+&lt;strong&gt;Props 또는 State 값이 변경되거나 컴포넌트가 마운트, 언마운트될때 호출됩니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Props나 State 값이 변경될때 화면의 Rendering이 다시 이뤄지며,
+랜더링이 필요하지 않을 경우에는&lt;/p&gt;
+&lt;p&gt;생명주기의 Updation 부분에 포함된 메소드에서 return 값을 수정, 반환하면
+컴포넌트 랜더링이 다시 이뤄지지 않습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[React] Redux, React-Redux]]></title><link>https://devhyunseok.github.io/posts/[React] Redux, React-Redux</link><guid isPermaLink="false">https://devhyunseok.github.io/posts/[React] Redux, React-Redux</guid><pubDate>Tue, 08 Oct 2019 13:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;redux-react-redux&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#redux-react-redux&quot; aria-label=&quot;redux react redux permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Redux, React-Redux&lt;/h2&gt;
+&lt;p&gt;리액트로 개발을 하면서 컴포넌트를 조합하다보면,
+&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;컴포넌트간에 상하관계가 트리형태로 구성&lt;/code&gt;&lt;/strong&gt;이 됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bcd92e7c0c442bcbd2a9c30b1808428f/d4e7f/redux-tree-001.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABcSAAAXEgFnn9JSAAAB0UlEQVQoz3VSaXOiUBDk//+ZfNhka7fMpUYuAbnkEBRQYgqDG48V5NDeBzGWsdjHBx4zTU9Pz1C4OsfqOR7re1GWSLMCyb5Anpef+VPuf4f6An0Bq/fhcKjvmhXg/pkHL+pgJQtZXqAJ30h4CSxPhKYzw83tIx47LDjJRlGUjYSXpNS51atKRXmA6YYQNR8DY4rB0MN2l363p6H9bwpL4plieDBGUzz1NDzRGj7W2zonKA5u7/vQTB8qwbwtPpoVXgaSNMOvBw4M2wfLCXhhJMhEWeXd72cBPZqt4+2Xijio/6n8vuSgriUzok2UiOjyBhxvjvjPuo67/ls9pB8tAa2ugkW8amj/CKqqnqQ5ongDQZ1gNo+x2uygj0L8TTIcCDA/DcN056TVFSmygWz4cIOIrFVZd/ZJShRK2hisoOFni0abVmCPX9GXbTy0eXToAZThhPjqo8PIZNp99Di1xvADG3ctBl1aQpcbIj2RUpXZlj2CNJBhOR7ZtxFk3YGsqNB1gwxgAl52oWgmZFmBqlvk2yGFXNi2DVGUyEpZ5w2gKvmVdD9cYjKNsM9yBOE7vFmMcbDAYrnGZpsQDyMEr0sSi7BL9vWUq7wfxiT+fh7KP+6eOLocglYyAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/bcd92e7c0c442bcbd2a9c30b1808428f/8ac56/redux-tree-001.webp 240w,
+/static/bcd92e7c0c442bcbd2a9c30b1808428f/d3be9/redux-tree-001.webp 480w,
+/static/bcd92e7c0c442bcbd2a9c30b1808428f/e46b2/redux-tree-001.webp 960w,
+/static/bcd92e7c0c442bcbd2a9c30b1808428f/3437f/redux-tree-001.webp 1416w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/bcd92e7c0c442bcbd2a9c30b1808428f/8ff5a/redux-tree-001.png 240w,
+/static/bcd92e7c0c442bcbd2a9c30b1808428f/e85cb/redux-tree-001.png 480w,
+/static/bcd92e7c0c442bcbd2a9c30b1808428f/d9199/redux-tree-001.png 960w,
+/static/bcd92e7c0c442bcbd2a9c30b1808428f/d4e7f/redux-tree-001.png 1416w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/bcd92e7c0c442bcbd2a9c30b1808428f/d9199/redux-tree-001.png&quot;
+            alt=&quot;image.png&quot;
+            title=&quot;image.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;컴포넌트가 중첩되어갈 수록 Tree가 깊어지고,
+컴포넌트간 데이터 전달에 문제가 발생합니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;이 과정에서 많은 콜백이 중첩되고 반복적인 코드가 생성되게 됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9edbba04ce30a03b336428a284f17c59/229ad/redux-tree-002.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABcSAAAXEgFnn9JSAAACFElEQVQoz2VT227aQBDlE/rU3+k39bGV+lCpf1KpUlUpT1EcIa5RiAqIOhI2Bsy1EEwMcYzxBRvM6cxic2lGGu96dfbMnJnZzG63A1sQBOh0OhgMBmi32zAMQ5zHcYz9fo+DHbDj8Ri9Xg+6riMMQ3HGGObKpIS8rmwbvu/DcRx4nncAJt+cYeNbz8Kd6cCczURAm/AcMLULwjQLy7IQRdEBkIA128M7SUfmZwPvb3V0rTWeRkM8ETEre0OYknFWkiShT3JSuWxuGOGzMseHYhdftWcM/k5we3OD4XAo1Gw2m7cZci0K+bwAybIMTdMuMid6vNDlKA5RzOUErnJ/j+l0KgiPNeQs2BVFgfz4iGaziVqthkajgfFodGoMrf56jT8q4ch71JBqtQqV7jHpMUPerFYrlEolhGsHpUIei8VCgLLZ7EWW3IjyXRlB6KNIarhEqqqiUqmcCJmsUCggCnx8+nGFh1YHs8kE9XodMyp6uVw+kdHepyZ8/P4LA2MOncaLlfX7faGKLeO6rpg9tmtZwdL1sfVcmKYpIo4S2YxLpV3LKjUqxPPcgPX6KhrDsykIUzlxspr2Cr/1IfY8l5Q9F5wv8J5HZE11RLhBnDTz3I5NOa/TQ6ePL1cS7OUSGkliORy91Wqh2+2Kf4Xq5tED+N+YI8MvgyOzc30iymhHHm23ImLq6Vhsk3PO/PyuuE///wAN9IOukly36AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/9edbba04ce30a03b336428a284f17c59/8ac56/redux-tree-002.webp 240w,
+/static/9edbba04ce30a03b336428a284f17c59/d3be9/redux-tree-002.webp 480w,
+/static/9edbba04ce30a03b336428a284f17c59/e46b2/redux-tree-002.webp 960w,
+/static/9edbba04ce30a03b336428a284f17c59/08aa0/redux-tree-002.webp 1356w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/9edbba04ce30a03b336428a284f17c59/8ff5a/redux-tree-002.png 240w,
+/static/9edbba04ce30a03b336428a284f17c59/e85cb/redux-tree-002.png 480w,
+/static/9edbba04ce30a03b336428a284f17c59/d9199/redux-tree-002.png 960w,
+/static/9edbba04ce30a03b336428a284f17c59/229ad/redux-tree-002.png 1356w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/9edbba04ce30a03b336428a284f17c59/d9199/redux-tree-002.png&quot;
+            alt=&quot;image.png&quot;
+            title=&quot;image.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이러한 컴포넌트간 데이터 전달을 위해 &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;Redux라는 상태관리 라이브러리&lt;/code&gt;&lt;/strong&gt;를 사용할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Redux&lt;/strong&gt;는 컴포넌트 트리 바깥에 하나의 &lt;strong&gt;중앙 저장소&lt;/strong&gt;를 두어
+&lt;strong&gt;어플리케이션 전역의 데이터를 관리하는 라이브러리&lt;/strong&gt;입니다.&lt;/p&gt;
+&lt;h2 id=&quot;flux&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#flux&quot; aria-label=&quot;flux permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Flux&lt;/h2&gt;
+&lt;p&gt;Redux를 이야기하기전에 먼저 Flux 패턴을 알아야합니다.&lt;/p&gt;
+&lt;p&gt;Flux 패턴은 페이스북에서 발표한 단방향 데이터 처리 아키텍처로
+MVC 모델의 복잡성을 개선하기 위해 나왔습니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 886px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3479135796a9776531c46064bdc3c8c7/cc155/flux-mvc.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 57.91666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABcSAAAXEgFnn9JSAAACuElEQVQoz1WTSY8bVRRG/b/YEUjTjtuueS7XPNlVnucmKKAoQmKTsENsAAklm2QXJZ12mhZIIBaIFb/n8MoNEiyerlSLc79P91SnL8lIioqsaqiagaLpyIomvmkYhomT5FwEOf2gwE4KTENHVWQ8z2b6/YbxiyWTlxuidc5goNF5+uxrdvuDgOlouo6iCrhYIMkKnuuiRQW9qGKQ1BhJxiTRyKwu01JncbVnffuQ5pcNxZcN0oVKZ7vbU5TVHdAQCUXSFtjONmHejLhnhXSHJV03ZFW5OFqPsa+wfr5kdFxT32yZfLdCkXQ6D3o9Lvp9BqL6v7A2nSS3UIVynCAlY3phxcdOQl14FG6XVEDX38yZ/fwp9XFH83KN5bl0/DDGCyO8IBSVDXTTwvE8bNfDsm2q0uFimPLAT/nQTsgyl2V4RqZ32T4uSa9n1Ncbytdz4jql88VPf3B4+xufX/9OkGVEYYBju8iSShL7rJc2ZlbxkR0LYIQexCyiHkPtnHoaMr/aMX63pTjOaZ5MBfDXv3h0++fpJaOMNPHFMXxxTZs8C3i4s7DSlA8kR1SO6LsBmSeWGZ9Q1yH16yXl1UIkbaieNHSy6YKomZGLqZsOpuXi+UNsx8MV1avKQolL5HTC+bAizyMip0+gdrl8XDB6v2V5vKR5uyFpKyuKIupJtFPV/nMUMQfSgLwMUNMxg3hMV7gYxSGp3aUyu3z27ZTm9sDs/YHJqw2OL46iCzW09omD3Ll4p45yEl04N86578Yn4H1bVCyG5AK48CWWPy5pbnbMb/ZMflihqSadk3MCpJvm/2BtSsuyMeKcM3HhMz9DCyJWuc7Q6JPFJqs3OxbHA6ObFdVX0zsPW2CbTD39cuo/UqunyoYQ3YxSzr1Wmxw3LRg6Yrkq4Q8tZq/21G+E1Mc96WWJ1JP5G9X8CptYNtK7AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/3479135796a9776531c46064bdc3c8c7/8ac56/flux-mvc.webp 240w,
+/static/3479135796a9776531c46064bdc3c8c7/d3be9/flux-mvc.webp 480w,
+/static/3479135796a9776531c46064bdc3c8c7/b4685/flux-mvc.webp 886w&quot;
+              sizes=&quot;(max-width: 886px) 100vw, 886px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/3479135796a9776531c46064bdc3c8c7/8ff5a/flux-mvc.png 240w,
+/static/3479135796a9776531c46064bdc3c8c7/e85cb/flux-mvc.png 480w,
+/static/3479135796a9776531c46064bdc3c8c7/cc155/flux-mvc.png 886w&quot;
+            sizes=&quot;(max-width: 886px) 100vw, 886px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/3479135796a9776531c46064bdc3c8c7/cc155/flux-mvc.png&quot;
+            alt=&quot;image.png&quot;
+            title=&quot;image.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;위의 이미지와 같이 Model과 View 사이에 양방향 통신이 이루어지는 MVC는
+프로젝트가 커질수록 &lt;strong&gt;모델과 뷰 사이의 복잡성이 증가&lt;/strong&gt;하는 단점이 있었습니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/db9ab529c9ffe00be99381ccea2d9c88/37523/flux.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 30%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABUUlEQVQY01WQO0sDQRSF898sJMnuTvY9s5l9mYQoCoIWavBBFEQLsRLUQgQfoDZqJanESixtxd/yOVmjYnGYuffce86ZqTm2QDitf3Dsv3MMq2GjdM786qbBFt35RWzL+eX/9gS16jIpfjDu2ZbAawmi0MW1plna2ub49YOTt092r+6RgSDwBaH/f6/2I+a23G8Id0K6JNInjgLspkVnboHhyQXD00uWt/dpOY4x9KqZwPMnSU1Cq2GR5jPG9ZG92yd2zm6Ioogiy9GJItOatlKEsULEOY1A48vUGIWsnq6wfr3G4HwFnenqa2rNepOyN8vh6I2jl3cOHp9JtaTfm6GdJGRpSpm1kbrNtOwwFRbYcUaZKzbuBuyMhqw/DMi7BVbdCH4/16Po9il6c2Rlt4ofBjHSpFIyMbyP5waoJEUqTWz645m0zIxQTt4pKo2x1hdojf51Zi0vsgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/db9ab529c9ffe00be99381ccea2d9c88/8ac56/flux.webp 240w,
+/static/db9ab529c9ffe00be99381ccea2d9c88/d3be9/flux.webp 480w,
+/static/db9ab529c9ffe00be99381ccea2d9c88/bc514/flux.webp 720w&quot;
+              sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/db9ab529c9ffe00be99381ccea2d9c88/8ff5a/flux.png 240w,
+/static/db9ab529c9ffe00be99381ccea2d9c88/e85cb/flux.png 480w,
+/static/db9ab529c9ffe00be99381ccea2d9c88/37523/flux.png 720w&quot;
+            sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/db9ab529c9ffe00be99381ccea2d9c88/37523/flux.png&quot;
+            alt=&quot;image.png&quot;
+            title=&quot;image.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이를 개선한 Flux 패턴의 경우 양방향 통신으로 생기는 복잡도를 &lt;strong&gt;단방향 통신&lt;/strong&gt;으로 바꾸어 상태값이 변경되었을때 &lt;strong&gt;View가 자동적으로 갱신&lt;/strong&gt;되게 구성하였습니다.&lt;/p&gt;
+&lt;p&gt;데이터 흐름의 순서대로 살펴보면&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Action 객체를 통해 행위와 데이터를 전달&lt;/strong&gt;합니다.&lt;/li&gt;
+&lt;li&gt;Dispatcher는 요청된 &lt;strong&gt;Action으로 어떠한 Store를 갱신할지 결정&lt;/strong&gt;합니다.&lt;/li&gt;
+&lt;li&gt;Store에서는 어플리케이션의 &lt;strong&gt;이전 상태 데이터와 현재 상태 데이터를 병합하고 상태를 갱신&lt;/strong&gt;합니다.&lt;/li&gt;
+&lt;li&gt;Store에서 갱신된 데이터는 &lt;strong&gt;View로 전달되어 화면에 반영&lt;/strong&gt;됩니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;redux&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#redux&quot; aria-label=&quot;redux permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Redux&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;Redux는 Flux 아키텍처를 기반으로한 구현체입니다.&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0228fe99311f920d7cb8fbd5a0871877/51800/redux.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABcSAAAXEgFnn9JSAAAB50lEQVQoz21TSW/aUBDmf7SH/t5IPXNpK9GqFyTaE3Bh6aGxRBDBLUGqAxizOF7xbhxvfPUbxzSkGWns92b5Zt735tVQSJZlsG2bLXE6nZDnJ/oXO7yULMvJV/qBw+GA1WoF13VpX2MfURRRr9fhOM5/AHH8iO+tb/j04SNuRqMnawmmKAr6/T42mw16vR7lE+BiscBkMsH9vQBt62E9M3H38wHT4ZYS319d4d2bt5jP5jC2R/A/tpB+25AkCe12GzzPo9PpQFXVEjBNUxiGQYY4yhC6MWz9CEsNCZDZv37+QusoiGHsfRi7AEHgYzgYotvtgru+RhRFqDEuPM+DLMukxyi8ODLjhhXzfR+maRbFk7OP5TIOVUWFZVklh3meExcH28R+v6PkMrjsnNmWyyUVe04+8ydJAk3TsJbWFMcK1KrbMnYhIj87V67sr0nlr2J8K0Zgx2WHlZEf7rATrOeXeBZ2XDZWTFnXL0URHahr9xJQXjpFlz6t0yQjZaLrOjiOo5tkkzDlp3gMUjhGiGOQUNz6zoQqeZeADGzOPUCcGVj90rGYapAFrxiVP5A2EnEbBiFuxiMIYxW3vWJ05iaNmDDWEDjxv8GuQNkLydKctOqQjUyr1UKz2USj0cBg0H+KzV/l9i+z8DvXXA0e9AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/0228fe99311f920d7cb8fbd5a0871877/8ac56/redux.webp 240w,
+/static/0228fe99311f920d7cb8fbd5a0871877/d3be9/redux.webp 480w,
+/static/0228fe99311f920d7cb8fbd5a0871877/e46b2/redux.webp 960w,
+/static/0228fe99311f920d7cb8fbd5a0871877/31d32/redux.webp 1196w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/0228fe99311f920d7cb8fbd5a0871877/8ff5a/redux.png 240w,
+/static/0228fe99311f920d7cb8fbd5a0871877/e85cb/redux.png 480w,
+/static/0228fe99311f920d7cb8fbd5a0871877/d9199/redux.png 960w,
+/static/0228fe99311f920d7cb8fbd5a0871877/51800/redux.png 1196w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/0228fe99311f920d7cb8fbd5a0871877/d9199/redux.png&quot;
+            alt=&quot;image.png&quot;
+            title=&quot;image.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Flux&lt;/strong&gt;에서는 어플리케이션 하나에 &lt;strong&gt;여러 스토리지&lt;/strong&gt;를 가질 수 있지만,
+&lt;strong&gt;Redux&lt;/strong&gt;에서는 &lt;strong&gt;하나의 스토리지로 제한&lt;/strong&gt;하였습니다.&lt;/p&gt;
+&lt;p&gt;대신, 다수의 Reducer를 두어 &lt;strong&gt;상태 변경 로직은 Reducer로 위임&lt;/strong&gt;,
+실제 상태 값이 결합 되는 부분은 Store에서 이루어지고
+해당 코드는 라이브러리에서 처리하여 코드 구현을 단순화 하였습니다.&lt;/p&gt;
+&lt;h2 id=&quot;react-redux-todo-app&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#react-redux-todo-app&quot; aria-label=&quot;react redux todo app permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;React, Redux Todo App&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://deminoth.github.io/redux/basics/ExampleTodoList.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Redux 홈페이지&lt;/a&gt;에 나와있는 &lt;strong&gt;TODO 앱&lt;/strong&gt;을 &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;Typescript + React Hooks&lt;/code&gt;&lt;/strong&gt;과 함께 조합하여 구현한 예시입니다.&lt;/p&gt;
+&lt;p&gt;해당 예제에서는 &lt;strong&gt;Typescript&lt;/strong&gt;를 사용하였으며 Create-React-App을 이용하여 생성하는 명령어는 다음과 같습니다. (Node.js가 설치가 되어있어야 합니다.)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx create-react-app [프로젝트명] --typescript &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;우선 Create-React-App 으로 생성한 프로젝트에
+Redux를 사용하기 위해 라이브러리를 추가해줍니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm install —save redux react-redux&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;dependencies&amp;quot;: {
+  &amp;quot;@types/jest&amp;quot;: &amp;quot;24.0.18&amp;quot;,
+  &amp;quot;@types/node&amp;quot;: &amp;quot;12.7.11&amp;quot;,
+  &amp;quot;@types/react&amp;quot;: &amp;quot;16.9.5&amp;quot;,
+  &amp;quot;@types/react-dom&amp;quot;: &amp;quot;16.9.1&amp;quot;,
+  &amp;quot;react&amp;quot;: &amp;quot;16.10.2&amp;quot;,
+  &amp;quot;react-dom&amp;quot;: &amp;quot;16.10.2&amp;quot;,
+  &amp;quot;react-redux&amp;quot;: &amp;quot;7.1.1&amp;quot;,
+  &amp;quot;react-scripts&amp;quot;: &amp;quot;3.2.0&amp;quot;,
+  &amp;quot;redux&amp;quot;: &amp;quot;4.0.4&amp;quot;,
+  &amp;quot;typescript&amp;quot;: &amp;quot;3.6.3&amp;quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;폴더 구조는 아래와 같습니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 598px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/73184bc9bb8c06f594d0ec505a471e2c/0c69d/redux-folder-tree.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 115.83333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAABYlAAAWJQFJUiTwAAACxUlEQVQ4y41V226bQBTM7/SlqtokNncwYG4LLBeDjeM4sdQoTVWp//8ynbVjJ6kUm4ejhdUynDkz5+yVbrtIRI6yG1Cv7pBkAobjYWJYmJr2KdQ5tX9cP4ur40NaVug3j1istwiTFFkhEWcFf1AgyyUs14duXQa9Oh4wuYZpDtkPqNoO9bJD2TcougZ5W8OZB9BdAtne+QzfqHjQSPOa683DC/RiBiN3oAtG5sDiuxXPTllezHC/wVULIkwff8Ou5nAIYmc+rPQANKaO/wE60Pw5Jg+/YOUh7JKAxSugORLw/SFdKToLoe1+wxQBaXp7qnbpw5zzA2+kyuqQPQvg+gHMOMP1/TOcPMZMknZO4IyggjX1RwJqrI8/j1FR4WH3hErSQqs1Vqt7hPMMU40+NL1RdTxR1iyqqYKUzc3Pgyg1M5P+IUjbJn0zmp314wdRdMvGrRfg9ukvzJKiSBdOQ6DqEA7DSs5b59Qpxzp6eYXvG6pcCNompcKsa+TtgZQPzcA7S/uQoXox2buZxJSmdvMObtFRkB6mFx5qZ42s4QdAUWGye4GZGKRok7JNyh7cRcB6+vtQvlQW+oz2O0AbWlpiulWmbinCEpZoYMTcsyxoNP2UNVbrW4buGWMbJqYENHZ/kMoOoh2QlAuIpkOUCswTsZ9AQZyOaz3X82GULW42W1R1hrIWKCoBWbfISsmZWSAlYJhklwEnzC6r1chaIoq/8MOvCKJvmIXXuNVfBy09elxPrfqZyupglJcolves3QCv3sCr7uCqZ7mC4arhYOG9xc5mqAAT0imHBxiCdiGILQf274ICKfsoG/UcDuG4XlaAYVGh2uyQd2tkiwFy/YhYtogrgkaCkTNT/zLg0YM/JDPYPqOta9SLDh3rKYqSojT7ltRHXlSvGVq8pBp0d1vIdoGmW6LtV+jXd6i7HrYfjr71/gGKzjO8hjW0qgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/73184bc9bb8c06f594d0ec505a471e2c/8ac56/redux-folder-tree.webp 240w,
+/static/73184bc9bb8c06f594d0ec505a471e2c/d3be9/redux-folder-tree.webp 480w,
+/static/73184bc9bb8c06f594d0ec505a471e2c/83245/redux-folder-tree.webp 598w&quot;
+              sizes=&quot;(max-width: 598px) 100vw, 598px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/73184bc9bb8c06f594d0ec505a471e2c/8ff5a/redux-folder-tree.png 240w,
+/static/73184bc9bb8c06f594d0ec505a471e2c/e85cb/redux-folder-tree.png 480w,
+/static/73184bc9bb8c06f594d0ec505a471e2c/0c69d/redux-folder-tree.png 598w&quot;
+            sizes=&quot;(max-width: 598px) 100vw, 598px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/73184bc9bb8c06f594d0ec505a471e2c/0c69d/redux-folder-tree.png&quot;
+            alt=&quot;스크린샷 2019-10-07 오후 4.50.28.png&quot;
+            title=&quot;스크린샷 2019-10-07 오후 4.50.28.png&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;리액트 컴포넌트의 경우 Components&lt;/strong&gt; 하위에 구성되어 있고
+&lt;strong&gt;리덕스 구현에 필요한 Actions, ActionTypes, Reducer의 경우 Modules&lt;/strong&gt;하위에 구성되어 있습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Actions, ActionTypes, Reducer를 각각의 파일로 분리하여 개발하는 예시가 많은 걸로 알고 있습니다.&lt;/li&gt;
+&lt;li&gt;개발을 하다보니 개인적으로 ActionType의 경우 Reducer와 Actions에서 주로 사용하게 되며, Reducer와 Action이 아닌 다른 곳에서는 ActionType을 직접 접근하지않고 Action을 이용하는게 맞다고 생각하여 세가지 파일을 하나의 파일로 구성하였습니다.&lt;/li&gt;
+&lt;li&gt;이러한 구조를 &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;Ducks 패턴&lt;/code&gt;&lt;/strong&gt;이라고 한다고 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;우선 &lt;strong&gt;index.tsx&lt;/strong&gt; 파일입니다.&lt;/p&gt;
+&lt;h3 id=&quot;indextsx&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#indextsx&quot; aria-label=&quot;indextsx permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;index.tsx&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &amp;#39;react&amp;#39;;
+import {createStore} from &amp;#39;redux&amp;#39;;
+import {Provider} from &amp;#39;react-redux&amp;#39;;
+import ReactDOM from &amp;#39;react-dom&amp;#39;;
+import App from &amp;#39;./App&amp;#39;;
+import combineReducers from &amp;#39;./combineReducers&amp;#39;;
+
+const store = createStore(combineReducers);
+
+ReactDOM.render(
+  &amp;lt;Provider store={store}&amp;gt;
+    &amp;lt;App/&amp;gt;
+  &amp;lt;/Provider&amp;gt;,
+  document.getElementById(&amp;#39;root&amp;#39;)
+);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;react-redux&lt;/strong&gt;에서 제공하는 &lt;strong&gt;Provider&lt;/strong&gt; 컴포넌트를 사용하여,
+Store 객체를 명시적으로 컴포넌트로 넘겨주지 않아도 App 컴포넌트를 포함한 하위 컴포넌트에서 Store에 접근 할 수 있게 해주고 있습니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;다음은 다수의 reducer 함수들을 Store에 넘길수 있게 하나의 reducer 함수로 만들어주는 &lt;strong&gt;combineReducers.ts&lt;/strong&gt; 입니다.&lt;/p&gt;
+&lt;h3 id=&quot;combinereducersts&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#combinereducersts&quot; aria-label=&quot;combinereducersts permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;combineReducers.ts&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import { combineReducers } from &amp;#39;redux&amp;#39;;
+import todos from &amp;quot;./modules/todoModules&amp;quot;;
+import visibilityFilter from &amp;quot;./modules/filterModules&amp;quot;;
+
+const todoApp = combineReducers&amp;lt;any&amp;gt;({
+  visibilityFilter: visibilityFilter,
+  todos: todos
+});
+
+export default todoApp;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Flux 패턴이 서로 다른 상태를 관리하기 위해 여러 스토어를 두는 것처럼,
+Redux에서는 &lt;strong&gt;하나의 스토어에 다수의 Reducer를 두어 논리적으로 상태 분리&lt;/strong&gt;를 합니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;다음은 어플리케이션의 중심인 App.tsx 파일입니다.&lt;/p&gt;
+&lt;h3 id=&quot;apptsx&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#apptsx&quot; aria-label=&quot;apptsx permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;App.tsx&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React, { Fragment } from &amp;#39;react&amp;#39;;
+import {useDispatch, useSelector} from &amp;quot;react-redux&amp;quot;;
+import {addTodo, completeTodo} from &amp;quot;./modules/todoModules&amp;quot;;
+import {setVisibilityFilter} from &amp;quot;./modules/filterModules&amp;quot;;
+import TodoList from &amp;quot;./components/TodoList&amp;quot;;
+import Filter from &amp;quot;./components/Filter&amp;quot;;
+import {ITodo} from &amp;quot;./components/Todo&amp;quot;;
+import AddTodo from &amp;quot;./components/AddTodo&amp;quot;;
+
+function selectTodos(todos: [ITodo], filter: &amp;#39;SHOW_ALL&amp;#39; | &amp;#39;SHOW_COMPLETED&amp;#39; | &amp;#39;SHOW_ACTIVE&amp;#39;) {
+  switch (filter) {
+    case &amp;#39;SHOW_COMPLETED&amp;#39;:
+      return todos.filter(todo =&amp;gt; todo.completed);
+    case &amp;#39;SHOW_ACTIVE&amp;#39;:
+      return todos.filter(todo =&amp;gt; !todo.completed);
+    default:
+      return todos;
+  }
+}
+
+const App: React.FC = () =&amp;gt; {
+  const visibleTodos = useSelector((state: any) =&amp;gt; selectTodos(state.todos, state.visibilityFilter));
+  const visibilityFilter = useSelector((state: any) =&amp;gt; state.visibilityFilter);
+  const dispatch = useDispatch();
+
+  return (
+    &amp;lt;Fragment&amp;gt;
+      &amp;lt;Filter
+        filter={visibilityFilter}
+        onFilterChange={nextFilter =&amp;gt;
+          dispatch(setVisibilityFilter(nextFilter))
+        }/&amp;gt;
+      &amp;lt;AddTodo
+        onAddClick={text =&amp;gt;
+          dispatch(addTodo(text))
+        }/&amp;gt;
+      &amp;lt;TodoList
+        todos={visibleTodos}
+        onTodoClick={index =&amp;gt;
+          dispatch(completeTodo(index))
+        }/&amp;gt;
+    &amp;lt;/Fragment&amp;gt;
+  );
+};
+
+export default App;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://deminoth.github.io/redux/basics/ExampleTodoList.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Redux 홈페이지&lt;/a&gt;에 나와있는 클래스 컴포넌트 형식보다는 &lt;strong&gt;React 16.8에서 정식으로 추가 된 React-Hook&lt;/strong&gt;를 사용한 예시가 더 도움이 될 거라 생각하여 &lt;strong&gt;React-Hook&lt;/strong&gt;을 사용하였습니다.&lt;/p&gt;
+&lt;p&gt;클래스 컴포넌트와 다른 점은 connect 함수를 사용하여,
+Redux와 컴포넌트를 연결하는 부분을 &lt;strong&gt;React-Hook&lt;/strong&gt;에서는 &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;useSelector, useDispatch&lt;/code&gt;&lt;/strong&gt;를 사용합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;useSelector의 경우 스토어에서 상태값을 불러올때 사용하며,
+useDispatch의 경우 스토어로 액션을 발생시킬때 사용합니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;다음으로 Reducer와 Action, ActionTypes가 정의 되어있는 modules 코드 입니다.&lt;/p&gt;
+&lt;h3 id=&quot;todomodulests&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#todomodulests&quot; aria-label=&quot;todomodulests permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;todoModules.ts&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/*
+ * action types
+ */
+const ADD_TODO = &amp;#39;ADD_TODO&amp;#39;;
+const COMPLETE_TODO = &amp;#39;COMPLETE_TODO&amp;#39;;
+
+/*
+ * action creators
+ */
+export function addTodo(text: string) {
+  return { type: ADD_TODO, text };
+}
+export function completeTodo(index: number) {
+  return { type: COMPLETE_TODO, index };
+}
+
+/*
+ * reducer
+ */
+const todos = (state = [], action: any) =&amp;gt; {
+  switch (action.type) {
+    case ADD_TODO:
+      return [...state, {
+        text: action.text,
+        completed: false
+      }];
+    case COMPLETE_TODO:
+      return [
+        ...state.slice(0, action.index),
+        Object.assign({}, state[action.index], {
+          completed: true
+        }),
+        ...state.slice(action.index + 1)
+      ];
+    default:
+      return state;
+  }
+};
+
+export default todos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;filtermodulests&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#filtermodulests&quot; aria-label=&quot;filtermodulests permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;filterModules.ts&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/*
+ * action types
+ */
+const SET_VISIBILITY_FILTER = &amp;#39;SET_VISIBILITY_FILTER&amp;#39;;
+
+/*
+ * action creators
+ */
+export function setVisibilityFilter(filter: string) {
+  return { type: SET_VISIBILITY_FILTER, filter };
+}
+
+export const VisibilityFilters = {
+  SHOW_ALL: &amp;#39;SHOW_ALL&amp;#39;,
+  SHOW_COMPLETED: &amp;#39;SHOW_COMPLETED&amp;#39;,
+  SHOW_ACTIVE: &amp;#39;SHOW_ACTIVE&amp;#39;
+};
+
+/*
+ * reducer
+ */
+const visibilityFilter = (state = VisibilityFilters.SHOW_ALL, action: any) =&amp;gt; {
+  switch (action.type) {
+    case SET_VISIBILITY_FILTER:
+      console.log(action.filter);
+      return action.filter;
+    default:
+      return state;
+  }
+};
+
+export default visibilityFilter;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;(1. Action)&lt;/code&gt;&lt;/strong&gt; 미리 정의해 둔 Action을 컴포넌트에서 Dispatch 하면,
+Reducer를 탐색하며 Action의 type이 맞는 부분을 찾습니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;(2. Reducer)&lt;/code&gt;&lt;/strong&gt; Reducer의 Action type이 일치한 부분이 실행되고 반환되는 값은 Store에 변경된 값이 반영됩니다. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;(3. Store)&lt;/code&gt;&lt;/strong&gt; Store에서는 전달된 변경된 값을 반영하고,
+Store의 State는 Props의 형태로 React Component로 전달하며
+&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;(4. UI)&lt;/code&gt;&lt;/strong&gt; React는 상태값에 기반하여 화면을 다시 렌더링하게 됩니다. &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;마지막으로 Components 하위에 있는 Todo App 컴포넌트 코드입니다.&lt;/p&gt;
+&lt;h3 id=&quot;todolisttsx&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#todolisttsx&quot; aria-label=&quot;todolisttsx permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TodoList.tsx&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &amp;#39;react&amp;#39;;
+import Todo, {ITodo} from &amp;#39;./Todo&amp;#39;;
+
+export interface ITodoList {
+  todos?: ITodo[],
+  onTodoClick: (index: number) =&amp;gt; void;
+}
+
+const TodoList = (props: ITodoList) =&amp;gt; {
+  const { todos, onTodoClick} = props;
+
+  return (
+    &amp;lt;ul&amp;gt;
+      {todos &amp;amp;&amp;amp; todos.map((todo, index) =&amp;gt; (
+        &amp;lt;Todo key={index} {...todo} onClick={() =&amp;gt; onTodoClick(index)}/&amp;gt;
+      ))}
+    &amp;lt;/ul&amp;gt;
+  )
+};
+
+export default TodoList&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;todotsx&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#todotsx&quot; aria-label=&quot;todotsx permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Todo.tsx&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &amp;#39;react&amp;#39;;
+
+export interface ITodo {
+  onClick: (e: React.MouseEvent&amp;lt;HTMLLIElement&amp;gt;) =&amp;gt; void;
+  completed: boolean;
+  text: string;
+}
+
+const Todo = (props: ITodo) =&amp;gt; {
+  const { onClick, completed, text } = props;
+
+  return (&amp;lt;li
+    onClick={onClick}
+    style={{
+      textDecoration: completed ? &amp;#39;line-through&amp;#39; : &amp;#39;none&amp;#39;
+    }}
+  &amp;gt;
+    {text}
+  &amp;lt;/li&amp;gt;)
+};
+
+export default Todo;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;filtertsx&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#filtertsx&quot; aria-label=&quot;filtertsx permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Filter.tsx&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &amp;#39;react&amp;#39;;
+
+interface IFilter {
+  onFilterChange: (filter: string) =&amp;gt; void,
+  filter: &amp;#39;SHOW_ALL&amp;#39; |
+    &amp;#39;SHOW_COMPLETED&amp;#39; |
+    &amp;#39;SHOW_ACTIVE&amp;#39;
+}
+
+const Filter = (props: IFilter) =&amp;gt; {
+  function renderFilter(filter: string, name: string) {
+    if (filter === props.filter) {
+      return name;
+    }
+
+    return (
+      &amp;lt;a href=&amp;#39;#&amp;#39; onClick={e =&amp;gt; {
+        e.preventDefault();
+        props.onFilterChange(filter);
+      }}&amp;gt;
+        {name}
+      &amp;lt;/a&amp;gt;
+    );
+  }
+
+  return (
+    &amp;lt;p&amp;gt;
+      Show:
+      {&amp;#39; &amp;#39;}
+      {renderFilter(&amp;#39;SHOW_ALL&amp;#39;, &amp;#39;All&amp;#39;)}
+      {&amp;#39;, &amp;#39;}
+      {renderFilter(&amp;#39;SHOW_COMPLETED&amp;#39;, &amp;#39;Completed&amp;#39;)}
+      {&amp;#39;, &amp;#39;}
+      {renderFilter(&amp;#39;SHOW_ACTIVE&amp;#39;, &amp;#39;Active&amp;#39;)}
+      .
+    &amp;lt;/p&amp;gt;
+  )
+};
+
+export default Filter&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;addtodotsx&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#addtodotsx&quot; aria-label=&quot;addtodotsx permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AddTodo.tsx&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React, {useRef} from &amp;#39;react&amp;#39;;
+
+interface IAddTodo {
+  onAddClick: (text: string) =&amp;gt; void;
+}
+
+const AddTodo = (props: IAddTodo) =&amp;gt; {
+  const { onAddClick } = props;
+  const inputTextRef = useRef&amp;lt;HTMLInputElement&amp;gt;(null);
+
+  function handleClick(e: React.MouseEvent&amp;lt;HTMLButtonElement&amp;gt;) {
+    const inputText = inputTextRef.current;
+
+    if(inputText) {
+      const text = inputText.value.trim();
+      onAddClick(text);
+      inputText.value = &amp;#39;&amp;#39;;
+    }
+  }
+
+  return (
+    &amp;lt;div&amp;gt;
+      &amp;lt;input type=&amp;#39;text&amp;#39; ref={inputTextRef} /&amp;gt;
+      &amp;lt;button onClick={(e) =&amp;gt; handleClick(e)}&amp;gt;
+        Add
+      &amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+};
+
+export default AddTodo;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[GraphQL 이란?]]></title><link>https://devhyunseok.github.io/posts/2019-09-10-graphql/</link><guid isPermaLink="false">https://devhyunseok.github.io/posts/2019-09-10-graphql/</guid><pubDate>Tue, 10 Sep 2019 13:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;graphql-이란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#graphql-%EC%9D%B4%EB%9E%80&quot; aria-label=&quot;graphql 이란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;GraphQL 이란?&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Facebook에서 만든 &lt;strong&gt;단일 End-Point의 쿼리 언어&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;2015년에 처음으로 공개되었고, 2016년 10월에 Stable 버전이 출시.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;API를 요청하는 URL은 하나&lt;/strong&gt;, 클라이언트에서 필요한 데이터를 쿼리로 통해 조회.&lt;/li&gt;
+&lt;li&gt;REST API와는 다른 새로운 API 디자인 아키텍처.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraphQL의 핵심은, 리소스를 url이 아니라 Query를 통해 표현&lt;/strong&gt;하는 것이다.&lt;/li&gt;
+&lt;li&gt;Github, Facebook, Pinterest에서 주로 사용 중.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;장점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%A5%EC%A0%90&quot; aria-label=&quot;장점 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;장점&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;데이터의 변동에 따라 API를 새로 만들 필요가 없어짐.&lt;/li&gt;
+&lt;li&gt;Web, Mobile API를 별도로 만들 필요가 없음.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OverFetching&lt;/strong&gt;, &lt;strong&gt;UnderFetching&lt;/strong&gt; 이슈 해결.&lt;/li&gt;
+&lt;li&gt;기존 데이터베이스 위에 &lt;strong&gt;(GraphQL)스키마&lt;/strong&gt;만 추가해서 사용 가능.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;overfetching&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#overfetching&quot; aria-label=&quot;overfetching permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;OverFetching&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;내가 필요한 정보보다 많은 정보를 서버한테 받는 내용&lt;/li&gt;
+&lt;li&gt;Ex) 사용자 정보 조회 시, 내가 필요한건 이름과 이메일인데 관련된 성별, 나이 등도 같이 전달 되어 오는 경우.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;underfetching&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#underfetching&quot; aria-label=&quot;underfetching permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;UnderFetching&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;페이지에서 필요한 정보를 표시하기 위해 클라이언트에서 여러 Rest API를 호출하는 경우&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;단점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8B%A8%EC%A0%90&quot; aria-label=&quot;단점 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;단점&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;클라이언트 코드량 증가&lt;/li&gt;
+&lt;li&gt;서버에서 오는 Response 양은 감소하지만 쿼리를 보내는 Client의 Request양은 증가.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;구현&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B5%AC%ED%98%84&quot; aria-label=&quot;구현 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;구현&lt;/h2&gt;
+&lt;h4 id=&quot;schema-server&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#schema-server&quot; aria-label=&quot;schema server permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Schema (Server)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;클라이언트에게 보내거나 받을 Data의 설명&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type Photo {
+    id: Int! // !는 사용의 강제성을 부여.
+    albumId: Int
+    title: String
+    url: String
+    thumbnailUrl: String
+}
+
+type Album {
+    id: Int!
+    userId: Int!
+    title: String!
+}
+
+type Query{
+    photos(albumId: Int, current: Int, limit: Int): [Photo]
+    albums(current: Int, limit: Int): [Album]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;resolver-server&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#resolver-server&quot; aria-label=&quot;resolver server permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Resolver (Server)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;쿼리 요청의 해결(resolve), 응답해주는 중간 역할&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const resolvers = {
+  Query: {
+    photos: (context, { albumId, current, limit }) =&amp;gt; getPhotos(albumId, current, limit),
+    albums: (context, { current, limit }) =&amp;gt; getAlbums(current, limit),
+};
+
+export default resolvers;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;queries-client&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#queries-client&quot; aria-label=&quot;queries client permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Queries (Client)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;발송할 쿼리 내용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const ALBUM_LIST = gql`
+    {
+        albums(current: 1, limit: 10) {
+            id
+            userId
+            title
+        }
+    }
+`;
+
+export const PHOTO_LIST = gql`
+    query photos($albumId: Int!) {
+        photos(albumId: $albumId, current: 1, limit: 10) {
+            id
+            albumId
+            title
+            url
+        }
+    }
+`;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;request-query-with-react-hooks-client&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#request-query-with-react-hooks-client&quot; aria-label=&quot;request query with react hooks client permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Request Query with React-Hooks (Client)&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &amp;#39;react&amp;#39;;
+import { useQuery } from &amp;#39;@apollo/react-hooks&amp;#39;;
+import { ALBUM_LIST } from &amp;#39;client/queries&amp;#39;;
+import Album from &amp;#39;client/components/Album&amp;#39;;
+
+const Home = () =&amp;gt; {
+  const { loading, error, data } = useQuery(ALBUM_LIST);
+
+  if (loading) {
+    return &amp;#39;Loading&amp;#39;;
+  }
+
+  if (error) {
+    return &amp;#39;Loading Error&amp;#39;;
+  }
+
+  return (
+    &amp;lt;div&amp;gt;
+      {
+        data &amp;amp;&amp;amp; data.albums &amp;amp;&amp;amp; data.albums.map((item) =&amp;gt; {
+          return &amp;lt;Album key={item.id} albumId={item.id} title={item.title}/&amp;gt;;
+        })
+      }
+    &amp;lt;/div&amp;gt;);
+};
+
+export default Home;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;소스-원본&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%86%8C%EC%8A%A4-%EC%9B%90%EB%B3%B8&quot; aria-label=&quot;소스 원본 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;소스 원본&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/devhyunseok/album-react-graphql&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;album-react-graphql&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;graphql-yoga&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#graphql-yoga&quot; aria-label=&quot;graphql yoga permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/prisma/graphql-yoga&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Graphql-yoga&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;GraphQL을 빠르게 시작할수 있는 GraphQL 서버 템플릿.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;react-apollo&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#react-apollo&quot; aria-label=&quot;react apollo permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;a href=&quot;https://www.apollographql.com/docs/react/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;React-Apollo&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;React의 GraphQL 상태 관리 라이브러리.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;참고-문언&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0-%EB%AC%B8%EC%96%B8&quot; aria-label=&quot;참고 문언 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고 문언&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://graphql.org/learn/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;공식 문서&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://graphql-kr.github.io/learn/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;한글화 공식 문서&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://samslow.me/development/2019/07/31/GraphQL%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%28feat.-%EB%AC%B4%ED%95%9C%ED%95%9C-%EA%B3%B5%EA%B0%84-%EC%A0%80-%EB%84%88%EB%A8%B8%EB%A1%9C%29/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;GraphQL 이란 무엇인가&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[Typescript] 자주 쓰는 tsconfig 설정 메모]]></title><link>https://devhyunseok.github.io/posts/2019-09-05-tsconfig-setting/</link><guid isPermaLink="false">https://devhyunseok.github.io/posts/2019-09-05-tsconfig-setting/</guid><pubDate>Thu, 05 Sep 2019 13:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;react에서-typescript-사용-시-자주-쓰는-tsconfig-옵션-메모&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#react%EC%97%90%EC%84%9C-typescript-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%EC%9E%90%EC%A3%BC-%EC%93%B0%EB%8A%94-tsconfig-%EC%98%B5%EC%85%98-%EB%A9%94%EB%AA%A8&quot; aria-label=&quot;react에서 typescript 사용 시 자주 쓰는 tsconfig 옵션 메모 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;React에서 Typescript 사용 시 자주 쓰는 tsconfig 옵션 메모&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;타입 스크립트 사용 시, tsconfig 작성 프리셋&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+  &amp;quot;compilerOptions&amp;quot;: {
+    &amp;quot;target&amp;quot;: &amp;quot;es5&amp;quot;
+    &amp;quot;lib&amp;quot;: [
+      &amp;quot;dom&amp;quot;,
+      &amp;quot;dom.iterable&amp;quot;,
+      &amp;quot;esnext&amp;quot;
+    ],
+    &amp;quot;allowJs&amp;quot;: true,
+    &amp;quot;skipLibCheck&amp;quot;: true,
+    &amp;quot;esModuleInterop&amp;quot;: true,
+    &amp;quot;allowSyntheticDefaultImports&amp;quot;: true,
+    &amp;quot;strict&amp;quot;: true, 
+    &amp;quot;forceConsistentCasingInFileNames&amp;quot;: true,
+    &amp;quot;module&amp;quot;: &amp;quot;esnext&amp;quot;,
+    &amp;quot;moduleResolution&amp;quot;: &amp;quot;node&amp;quot;,
+    &amp;quot;isolatedModules&amp;quot;: true,
+    &amp;quot;noEmit&amp;quot;: true,
+    &amp;quot;removeComments&amp;quot;: true,
+    &amp;quot;jsx&amp;quot;: &amp;quot;react&amp;quot;,
+    &amp;quot;baseUrl&amp;quot;: &amp;quot;./src&amp;quot;,
+    &amp;quot;resolveJsonModule&amp;quot;: true
+  },
+  &amp;quot;include&amp;quot;: [
+    &amp;quot;./src/**/*&amp;quot;
+  ]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;target-es5&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#target-es5&quot; aria-label=&quot;target es5 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“target”: “es5”&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;사용할 ECMAScript 버전 설정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;lib-domdomiterableesnext&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#lib-domdomiterableesnext&quot; aria-label=&quot;lib domdomiterableesnext permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“lib”: [“dom”,“dom.iterable”,“esnext”]&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;컴파일에 포함될 라이브러리 파일 목록&lt;/li&gt;
+&lt;li&gt;target 옵션 값에 따라 기본으로 포함되는 라이브러리가 있다.&lt;/li&gt;
+&lt;li&gt;lib 옵션 설정시 그 라이브러리 파일만 포함된다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;allowjs-true&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#allowjs-true&quot; aria-label=&quot;allowjs true permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“allowJs”: true&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;자바스크립트 파일 컴파일 허용 여부.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;skiplibcheck-true&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#skiplibcheck-true&quot; aria-label=&quot;skiplibcheck true permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“skipLibCheck”: true&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;모든 선언 파일의 유형 검사 건너뛰기 (*.d.ts)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;esmoduleinterop-true&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#esmoduleinterop-true&quot; aria-label=&quot;esmoduleinterop true permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“esModuleInterop”: true&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;import default를 사용 가능하게 설정.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;allowsyntheticdefaultimports-true&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#allowsyntheticdefaultimports-true&quot; aria-label=&quot;allowsyntheticdefaultimports true permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“allowSyntheticDefaultImports”: true&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;export default 를 export 한 값들을 가지는 객체로 설정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;strict-true&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#strict-true&quot; aria-label=&quot;strict true permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“strict”: true&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;엄격한 유형 검사 활성화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;forceconsistentcasinginfilenames-true&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#forceconsistentcasinginfilenames-true&quot; aria-label=&quot;forceconsistentcasinginfilenames true permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“forceConsistentCasingInFileNames”: true&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;동일 파일에 대해 일관되지 않은 참조 허용하지 않음.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;module-esnext&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#module-esnext&quot; aria-label=&quot;module esnext permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“module”: “esnext”&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;모듈 설정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;moduleresolution-node&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#moduleresolution-node&quot; aria-label=&quot;moduleresolution node permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“moduleResolution”: “node”&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;모듈 (검색)해석 방식 설정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;isolatedmodules-true&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#isolatedmodules-true&quot; aria-label=&quot;isolatedmodules true permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“isolatedModules”: true&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;각 파일을 별도의 모듈로 변환.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;noemit-true&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#noemit-true&quot; aria-label=&quot;noemit true permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“noEmit”: true&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;출력을 표시하지 않음.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;removecomments-true&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#removecomments-true&quot; aria-label=&quot;removecomments true permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“removeComments”: true&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;주석 삭제&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;jsx-react&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jsx-react&quot; aria-label=&quot;jsx react permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“jsx”: “react”&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;jsx&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;baseurl-src&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#baseurl-src&quot; aria-label=&quot;baseurl src permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;“baseUrl”: “./src”&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;프로젝트 Import root path&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Palindrome Number]]></title><link>https://devhyunseok.github.io/posts/2019-08-03-palindrome-number/</link><guid isPermaLink="false">https://devhyunseok.github.io/posts/2019-08-03-palindrome-number/</guid><pubDate>Sat, 03 Aug 2019 13:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Palindrome Number&lt;/h1&gt;
+&lt;b&gt;난이도 - Easy&lt;/b&gt;&lt;br/&gt;
+&lt;b&gt;언어 - Javascript&lt;/b&gt;&lt;br/&gt;
+&lt;b&gt;출처 - &lt;/b&gt;&lt;a href=&quot;https://leetcode.com/problems/palindrome-number/&quot;&gt;&lt;b&gt;Leetcode&lt;/b&gt;&lt;/a&gt;
+&lt;hr&gt;
+&lt;p&gt;
+Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.&lt;/p&gt;
+&lt;p&gt;
+정수가 팔레드롬인지 결정. 정수는 앞,뒤로 동일하게 읽을 떄 팔레드롬이다.
+&lt;/p&gt;
+---
+&lt;h4&gt;Example 1&lt;/h4&gt;
+&lt;pre&gt;
+&lt;code&gt;Input: 121
+Output: true
+Example 2:
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h4&gt;Example 2&lt;/h4&gt;
+&lt;pre&gt;
+&lt;code&gt;Input: -121
+Output: false
+Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h4&gt;Example 3&lt;/h4&gt;
+&lt;pre&gt;
+&lt;code&gt;Input: 10
+Output: false
+Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;pre&gt;
+&lt;code&gt;/**
+ * @param {number} x
+ * @return {boolean}
+ */
+const isPalindrome = function(x) {
+    if (x === 0) return true; // 0일땐 항상 true
+    if (x &lt; 0 || x % 10 === 0) return false; // 음수거나 10으로 나눠서 나머지가 없을 경우 항상 false
+    
+    const stringNum = x.toString();
+    const reverse = stringNum.split(&apos;&apos;).reverse().join(&apos;&apos;);
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;return toStringInput === reverse;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;};
+&lt;/code&gt;&lt;/p&gt;
+&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[명령형 패러다임 vs 선언적 패러다임]]></title><link>https://devhyunseok.github.io/posts/2019-07-22-imperative-versus-declarative/</link><guid isPermaLink="false">https://devhyunseok.github.io/posts/2019-07-22-imperative-versus-declarative/</guid><pubDate>Mon, 22 Jul 2019 13:00:00 GMT</pubDate><content:encoded>&lt;p&gt;원본: &lt;a href=&quot;https://medium.com/front-end-weekly/imperative-versus-declarative-code-whats-the-difference-adc7dd6c8380&quot;&gt;imperative-versus-declarative-code-whats-the-difference&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;위 포스팅을 읽고 요점을 정리한 내용입니다.&lt;/p&gt;
+&lt;h3 id=&quot;명령형-패러다임-imperative&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AA%85%EB%A0%B9%ED%98%95-%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84-imperative&quot; aria-label=&quot;명령형 패러다임 imperative permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;명령형 패러다임 (Imperative)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;절차, 객체지향 프로그래밍은 명령형 패러다임 기반.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;C, C++, C#, PHP, Java 같은 언어가 대표적.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;프로그램의 상태를 변경하는 내용의 명령문을 작성하는 방식.&lt;/li&gt;
+&lt;li&gt;하드웨어의 동작 방식과 밀접한 관계가 있음.&lt;/li&gt;
+&lt;li&gt;명령형 패러다임 코드는 조건문, 루프, 상속을 사용.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;
+&lt;code&gt;
+class Number {
+  constructor (number = 0) {
+    this.number = number;
+  }
+  
+  add (x) {
+    this.number = this.number + x;
+  }
+}
+const myNumber = new Number (5);
+myNumber.add (3);
+console.log (myNumber.number); // 8
+
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h3 id=&quot;선언적-패러다임-declarative&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%A0%EC%96%B8%EC%A0%81-%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84-declarative&quot; aria-label=&quot;선언적 패러다임 declarative permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;선언적 패러다임 (Declarative)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;논리, 함수형, 도메인 특정 언어는 선언적 패러다임 기반.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML, XML, CSS, SQL, Prolog, Haskell, F# 같은 언어가 대표적.&lt;/li&gt;
+&lt;li&gt;범용적으로 사용되는 프로그래밍 언어가 아닐 수 있음.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;소프트웨어 흐름을 묘사하는것보다 소프트웨어 로직을 구축하는 것에 중점을 두는 방식.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;예를 들면, &lt;code class=&quot;language-text&quot;&gt;&amp;lt;img src=&amp;quot;./image.jpg&amp;quot; /&amp;gt;&lt;/code&gt;의 경우 브라우저에게 이미지를 표시하라고 말하지만, 어떻게 표시하는지는 정의하지 않음.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;람다 계산법 기반으로 상태, 사이드 이펙트, 변할수 있는 데이터를 피함.&lt;/li&gt;
+&lt;li&gt;명령문 대신 표현식을 작성.&lt;/li&gt;
+&lt;li&gt;같은 데이터가 입력 됐을 경우, 항상 같은 값을 반환하여야 함.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;
+&lt;code&gt;
+const sum = a =&gt; b =&gt; a + b;
+console.log (sum (5) (3)); // 8
+
+&lt;/code&gt;
+&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[GDG I/O Extended 2019 WebTech 후기]]></title><link>https://devhyunseok.github.io/posts/2019-07-13-gdg-webtech/</link><guid isPermaLink="false">https://devhyunseok.github.io/posts/2019-07-13-gdg-webtech/</guid><pubDate>Sat, 13 Jul 2019 13:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://festa.io/events/339&quot;&gt;&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIFAf/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAbmjIQkk4//EABoQAQABBQAAAAAAAAAAAAAAAAERAAMQEjP/2gAIAQEAAQUCDUmoM3+v/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAECEf/aAAgBAwEBPwEd4z//xAAWEQADAAAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8BShT/xAAWEAADAAAAAAAAAAAAAAAAAAAAASD/2gAIAQEABj8Cln//xAAbEAABBAMAAAAAAAAAAAAAAAAAARARYSExof/aAAgBAQABPyHETItSzomyGH//2gAMAwEAAgADAAAAEKv/AP/EABYRAQEBAAAAAAAAAAAAAAAAAAERAP/aAAgBAwEBPxBVbqhN/8QAGBEBAQADAAAAAAAAAAAAAAAAAQARITH/2gAIAQIBAT8QAYJ35f/EABwQAQADAAIDAAAAAAAAAAAAAAEAESFRcTFhgf/aAAgBAQABPxDbIc+KgViekuIOs9YhMVKcENfN3qf/2Q==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source srcset=&quot;/static/bb7c043dbcd67c53bce7681d61ab25ce/8ac56/gdg_io_2019_webtech.webp 240w,
+/static/bb7c043dbcd67c53bce7681d61ab25ce/d3be9/gdg_io_2019_webtech.webp 480w,
+/static/bb7c043dbcd67c53bce7681d61ab25ce/10237/gdg_io_2019_webtech.webp 850w&quot; sizes=&quot;(max-width: 850px) 100vw, 850px&quot; type=&quot;image/webp&quot;&gt;
+          &lt;source srcset=&quot;/static/bb7c043dbcd67c53bce7681d61ab25ce/09b79/gdg_io_2019_webtech.jpg 240w,
+/static/bb7c043dbcd67c53bce7681d61ab25ce/7cc5e/gdg_io_2019_webtech.jpg 480w,
+/static/bb7c043dbcd67c53bce7681d61ab25ce/faddd/gdg_io_2019_webtech.jpg 850w&quot; sizes=&quot;(max-width: 850px) 100vw, 850px&quot; type=&quot;image/jpeg&quot;&gt;
+          &lt;img class=&quot;gatsby-resp-image-image&quot; src=&quot;/static/bb7c043dbcd67c53bce7681d61ab25ce/faddd/gdg_io_2019_webtech.jpg&quot; alt=&quot;gdg io 2019 webtech&quot; title=&quot;gdg io 2019 webtech&quot; loading=&quot;lazy&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;`19.07.13일에 구글 스타트업 캠퍼스에서 진행된 Google I/O Webtech 세미나 간단 메모.&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Puppeteer, PWA는 최근에 개인적으로 공부를 진행했었는데,
+마지막 세션이었던 Lighthouse는 세미나에서 처음 알게된 툴이었다. &lt;/p&gt;
+&lt;p&gt;출근하게되면 회사에서 작성한 코드를 Lighthouse로 검사해서 리펙토링을 진행 해봐야겠다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://web.dev/&quot;&gt;Google Web Dev&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 style=&quot;margin: 0px&quot;&gt;&lt;a href=&quot;https://web.dev/prerender-with-react-snap&quot;&gt;Puppeteer&lt;/a&gt;&lt;/h1&gt;
+&lt;hr style=&quot;margin: 0px&quot;/&gt;
+- 구글에서 내놓은 Headless Chrome Node API
+- 프로그래밍적 입력이 아닌 사용자의 입력을 흉내내는 방식으로 마우스 등의 조작도 가능.
+- Jest를 이용한 테스트 가능.
+    - Jest Puppeteer 라이브러리.
+- React-Snap
+&lt;h1 style=&quot;margin: 0px&quot;&gt;
+&lt;a href=&quot;https://web.dev/hands-on-portals&quot;&gt;Hands on Portals&lt;/a&gt;
+&lt;/h1&gt;
+&lt;hr style=&quot;margin: 0px&quot;/&gt;
+### Micro Frontend
+- MSA를 프론트엔드에 접목.
+- 하나의 기능이 문제가 생겨도 전체 기능에는 영향이 가지 않도록
+- 하나의 조직이 하나의 기능을 담당하도록 (프론트, 백, 개발 및 배포까지)
+    - 도메인을 분리
+&lt;h3 id=&quot;portals&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#portals&quot; aria-label=&quot;portals permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Portals&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML 규격&lt;/li&gt;
+&lt;li&gt;아직은 Chrome Canary에서만 동작 (2019-07-13 기준)&lt;/li&gt;
+&lt;li&gt;Chrome Canary &gt; Chrome Flags &gt; Enable Portals&lt;/li&gt;
+&lt;li&gt;페이지간의 이동을 부드럽게 만들어주는 HTML 요소.&lt;/li&gt;
+&lt;li&gt;하나의 페이지에서 다른 페이지를 Import해 올때.&lt;/li&gt;
+&lt;li&gt;iFrame과 Portals이 동작방식이 유사하므로, Portals를 지원하지 않는 페이지는 iFrame을 이용.&lt;/li&gt;
+&lt;li&gt;PostMessage를 이용하여 데이터를 주고 받을 수 있다 (iFrame 처럼).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 style=&quot;margin: 0px&quot;&gt;New Capabilities for the Web&lt;/h1&gt;
+&lt;hr style=&quot;margin: 0px&quot;/&gt;
+- 웹의 새로운 기능, 확장성
+&lt;h3 id=&quot;app-gap&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#app-gap&quot; aria-label=&quot;app gap permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;App Gap&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;네이티브 앱과 앱 사이 차이&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;project-fugu&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#project-fugu&quot; aria-label=&quot;project fugu permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Project Fugu&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;네이티브 웹과 앱 사이의 격차를 줄이는 프로젝트&lt;/li&gt;
+&lt;li&gt;Fugu (복어), 기능 개발도 중요하지만 사용자의 안정성도 중요.&lt;/li&gt;
+&lt;li&gt;Web can do everything&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;new-capabilities&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#new-capabilities&quot; aria-label=&quot;new capabilities permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;New Capabilities&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Share Content and Receiving Shares&lt;/li&gt;
+&lt;li&gt;Https, 사용자 액션 필요.&lt;/li&gt;
+&lt;li&gt;Web Share Target API&lt;/li&gt;
+&lt;li&gt;WebApp Manifest안에 Share Target 필드 추가&lt;/li&gt;
+&lt;li&gt;Media Session API&lt;/li&gt;
+&lt;li&gt;시스템(안드로이드, Mac 등)의 미디어를 컨트롤 가능.&lt;/li&gt;
+&lt;li&gt;Detecting Barcode, Face&lt;/li&gt;
+&lt;li&gt;Shape Detection API&lt;/li&gt;
+&lt;li&gt;사진을 올리면 얼굴을 디텍트.&lt;/li&gt;
+&lt;li&gt;Perception ToolKit&lt;/li&gt;
+&lt;li&gt;Sensing&lt;/li&gt;
+&lt;li&gt;Meaning&lt;/li&gt;
+&lt;li&gt;UX&lt;/li&gt;
+&lt;li&gt;System Wake Lock and ScreenWake Lock&lt;/li&gt;
+&lt;li&gt;장치가 잠자기 상태가 되지 않게 설정.&lt;/li&gt;
+&lt;li&gt;화면의 꺼짐등을 제어할 수도 있음.&lt;/li&gt;
+&lt;li&gt;Badge API&lt;/li&gt;
+&lt;li&gt;웹 사이트를 어플리케이션 형태로 다운로드.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 style=&quot;margin: 0px&quot;&gt;WebAssembly 101&lt;/h1&gt;
+&lt;hr style=&quot;margin: 0px&quot;/&gt;
+&lt;h3 id=&quot;emscription-프로젝트&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#emscription-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8&quot; aria-label=&quot;emscription 프로젝트 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Emscription 프로젝트&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;C, C++을 javascript로 컴파일할수있도록 도와주는 SDK&lt;/li&gt;
+&lt;li&gt;LLVM 바이트코드를 Javascript로 컴파일&lt;/li&gt;
+&lt;li&gt;C, C++ -&gt; Emscripten -&gt; Javascript(asm.js)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;asm.js&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Javascript 고수준 요소는 제외&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Object, String, Closure 등&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;동적으로 타입이 변환하지 않는다는 전제.&lt;/li&gt;
+&lt;li&gt;메모리를 직접 재어한다고 보장.&lt;/li&gt;
+&lt;li&gt;네이티브에 준한 성능을 얻을 수 있음.&lt;/li&gt;
+&lt;li&gt;차라리 이럴꺼면 브라우저에서 어셈블리어를 정의하는게 나을거 같다.. -&gt; WebAssmbly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Web을 위한 어셈블리어&lt;/li&gt;
+&lt;li&gt;기계어와 대응되는 명령어 집합.&lt;/li&gt;
+&lt;li&gt;웹 브라우저에서 실행되는 바이너리&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;어디서-쓸수있나&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%96%B4%EB%94%94%EC%84%9C-%EC%93%B8%EC%88%98%EC%9E%88%EB%82%98&quot; aria-label=&quot;어디서 쓸수있나 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;어디서 쓸수있나&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Native에 준한 속도 처리&lt;/li&gt;
+&lt;li&gt;Image, Video Editing&lt;/li&gt;
+&lt;li&gt;Gaming&lt;/li&gt;
+&lt;li&gt;C, C++ 코드 베이스를 재사용 가능.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;이미지 압축 알고리즘.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mozjpeg&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;사용-사례&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%82%AC%EC%9A%A9-%EC%82%AC%EB%A1%80&quot; aria-label=&quot;사용 사례 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;사용 사례&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Wasmboy (게임보이를 웹에서 사용)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Codebase&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Typescript, javascript&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;assemblyscript&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#assemblyscript&quot; aria-label=&quot;assemblyscript permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AssemblyScript&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Typescript Subset&lt;/li&gt;
+&lt;li&gt;Typescript를 WebAssembly로 컴파일&lt;/li&gt;
+&lt;li&gt;Any, undefined 타입은 사용 불가&lt;/li&gt;
+&lt;li&gt;WebAssembly 타입을 사용&lt;/li&gt;
+&lt;li&gt;GitHub (Awesome-wasm-langs)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;WebAssembly는 만능이 아님.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;다만, 일관적인 성능을 보장&lt;/li&gt;
+&lt;li&gt;가벼운 작업을 하는데 굳이 쓸 이유는 없음.&lt;/li&gt;
+&lt;li&gt;무거운 알고리즘에 유용.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://Webassembly.studio&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://Webassembly.studio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 style=&quot;margin: 0px&quot;&gt;Going Big - PWA&lt;/h1&gt;
+&lt;hr style=&quot;margin: 0px&quot;/&gt;
+- 기존의 웹 기술을 사용해서 네이티브 웹 경험을 사용자에게 제공.
+- Chrome 76부터는 데스크탑도 지원
+- Desktop, Mobile Same code
+&lt;h3 id=&quot;구성-요소&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C&quot; aria-label=&quot;구성 요소 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;구성 요소&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;WebSite&lt;/li&gt;
+&lt;li&gt;Web App Manifest&lt;/li&gt;
+&lt;li&gt;설치할때, 시스템에서 어떻게 설치해야할지 알려주는 내용&lt;/li&gt;
+&lt;li&gt;Service worker&lt;/li&gt;
+&lt;li&gt;인터넷이 안되는 상황, Offline First&lt;/li&gt;
+&lt;li&gt;메인 스레드 외의 여분의 일꾼&lt;/li&gt;
+&lt;li&gt;네트워크가 불안정해서 데이터를 못가져왔을 경우, 캐싱 용도(가장 최근에 가져온 데이터를 보여줌)&lt;/li&gt;
+&lt;li&gt;Workbox (캐시 만료에 대한 관리를 지원)&lt;/li&gt;
+&lt;li&gt;Write Once Work Anywhere&lt;/li&gt;
+&lt;li&gt;Expanded Capabilities&lt;/li&gt;
+&lt;li&gt;OS integration&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 style=&quot;margin: 0px&quot;&gt;Deep in Lighthouse Audits&lt;/h1&gt;
+&lt;hr style=&quot;margin: 0px&quot;/&gt;
+### Lighthouse 란?
+- Google Chrome팀에서 만든 데브 툴.
+- Google Chrome에서 Audits 탭에서 사용 가능.
+- 분석 도구
+    - 웹 사이트 퍼포먼스, 접근성, 검색 엔진 최적화.
+    - 성능 테스트.
+- 구글에서 사용하는 핵심 지표.
+- 시크릿 모드에서 돌리는게 좋음
+    - 크롬 확장 같은걸 제외시켜줌.
+- cli 버전도 존재(CI 툴을 사용할 때)
+- 도움이 될 만한 항목
+    - CSS minify, Javascript minify
+    - Interaction Observer</content:encoded></item><item><title><![CDATA[FE 개발자가 알아야하는 내용]]></title><link>https://devhyunseok.github.io/posts/FE 개발자가 알아야하는 내용</link><guid isPermaLink="false">https://devhyunseok.github.io/posts/FE 개발자가 알아야하는 내용</guid><pubDate>Tue, 09 Jul 2019 13:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;메모&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;CS기본 (컴퓨터 사이언스)&lt;/li&gt;
+&lt;li&gt;알고리즘&lt;/li&gt;
+&lt;li&gt;자료구조&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;성능튜닝&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;개발자 도구를 이용한 프로파일링&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;웹 펀더멘탈&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;유저가 브라우저에 Url 입력 시 화면이 뜨기까지의 과정을 설명.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SEO(검색 엔진 최적화)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HOC란&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HOC, higher-order component&lt;/li&gt;
+&lt;li&gt;컴포넌트 로직을 재사용하기 위한 React의 고급 기술&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://reactjs-kr.firebaseapp.com/docs/higher-order-components.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://reactjs-kr.firebaseapp.com/docs/higher-order-components.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Javascript chaining&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;메서드 체인&lt;/li&gt;
+&lt;li&gt;자기자신 객체를 반환하면서 다른 함수를 지속적으로 호출.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PWA(Progressive Web App)&lt;/li&gt;
+&lt;li&gt;Javascript Prototype&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Scope&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;렉시컬스코프 (정적 스코프)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://meetup.toast.com/posts/86&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://meetup.toast.com/posts/86&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;소스코드의 작성된 문맥에 의해 결정&lt;/li&gt;
+&lt;li&gt;대부분의 프로그래밍언어가 채택.&lt;/li&gt;
+&lt;li&gt;자바스크립트는 렉시컬스코프 규칙을 따름&lt;/li&gt;
+&lt;li&gt;호출 스택과 관계없이 각각의 대응표를 소스코드 기준으로 정의하고 대응표를 변경하지 않음.&lt;/li&gt;
+&lt;li&gt;자바스크립트는 컴파일 단계에서 변수 선언단계가 스코프의 꼭대기로 호이스팅(“끌어올림”)됨&lt;/li&gt;
+&lt;li&gt;동적 스코프&lt;/li&gt;
+&lt;li&gt;프로그램 런타임 도중의 실행 컨텍스트나 호출 컨텍스트에 의해 결정&lt;/li&gt;
+&lt;li&gt;var는 함수형 스코프&lt;/li&gt;
+&lt;li&gt;let, const는 블록레벨 스코프&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Javascript Closure&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;함수 + 함수를 둘러싼 환경(Lexical environment)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;This 바인딩&lt;/li&gt;
+&lt;li&gt;제너레이터, 이터레이터&lt;/li&gt;
+&lt;li&gt;브라우저 동작 원리&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h4&gt;가상 스크롤링 (Grid 컴포넌트)&lt;/h4&gt;
+- https://jsfiddle.net/eu81273/WKJ5z/
+&lt;h4&gt;자바스크립트 입문자에게 좋은 아티클&lt;/h4&gt;
+- https://programmingsummaries.tistory.com/220?category=485241
+&lt;h4&gt;디자인 패턴 정리&lt;/h4&gt;
+- https://diveintodata.org/2015/10/05/%EA%B7%BC%EB%9E%98-%EB%B0%B0%EC%9A%B4-%EB%AA%87-%EA%B0%80%EC%A7%80-%ED%8C%A8%ED%84%B4-%EC%A0%95%EB%A6%AC-provider-builder-delegation/</content:encoded></item></channel></rss>
